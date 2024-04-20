@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from '../assets/Logo.png'
 import { Link, useLocation } from "react-router-dom";
-import { DASHBOARD_SIDEBAR_LINKS } from '../Database/Navigation'
+import { DASHBOARD_SIDEBAR_LINKS } from '../Database_2024/Navigation'
 
 const Sidebar = () => {
   return (

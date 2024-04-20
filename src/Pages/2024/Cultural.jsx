@@ -1,5 +1,5 @@
 import React from 'react'
-import { CULTURAL_CONTEXT_LINKS } from '../../Database/CulruralData'
+import { CULTURAL_CONTEXT_LINKS } from '../../Database_2024/CulruralData'
 
 
 const Cultural = () => {

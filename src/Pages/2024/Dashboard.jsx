@@ -19,7 +19,9 @@ const Dashboard = () => {
         setShow={setShow}
         setShowCultural={setShowCultural}
       />
+    
       <Calendar />
+     
 
       {showCultural ? <Cultural /> : null}
 

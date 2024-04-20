@@ -1,7 +1,7 @@
 import React from "react";
 import EnterpriseRollover from "../../components/Rollover/EnterpriseRollover";
 import { useState } from "react";
-import { ENTERPRISE_PRIORITIES } from "../../Database/Enterprise_Priori_Data";
+import { ENTERPRISE_PRIORITIES } from "../../Database_2024/Enterprise_Priori_Data";
 
 const Enterprise = () => {
   const [modal, setModal] = useState(false);
@@ -103,7 +103,7 @@ const Enterprise = () => {
 
 
       {/* === ENTERPRISE DETAILS === */}
-      <div className="w-full h-[300px] bg-white mt-2 p-1 flex">
+      <div className="w-full h-[270px] bg-white mt-2 p-1 flex">
         {modal ? (
           <div className="bg-red-200 w-full">
             {

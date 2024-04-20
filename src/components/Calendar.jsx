@@ -1,12 +1,31 @@
-import React from 'react'
+import React,{useEffect, useRef} from 'react'
 
 const Calendar = () => {
+    const headerRef = useRef(null)
+  
+    const stickHeaderFunc = () => {
+      window.addEventListener('scroll', ()=> {
+        if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
+          headerRef.current.classList.add('sticky_header')
+        }else{
+          headerRef.current.classList.remove('sticky_header')
+        }
+      })
+    }
+  
+    useEffect(()=> {
+  stickHeaderFunc()
+  return window.removeEventListener('scroll', stickHeaderFunc)
+    }, [])
+
+
+
   return (
-    <div className='flex'>
+    <div className='flex' ref={headerRef}>
         <div className="bg-gradient-to-t from-gray-400 rounded p-4 gap-2 border border-gray-200 flex justify-center items-center">
            
         </div>
-        <div className="bg-gradient-to-t from-gray-400 rounded p-3 gap-2 flex-1 border border-gray-200 flex justify-center items-center">
+        <div className="bg-gradient-to-t from-gray-400 rounded p-2 py-5 gap-2 flex-1 border border-gray-200 flex justify-center items-center">
             <span className=' w-32 font-medium text-center'>Feb</span>
             <span className=' w-32 font-medium text-center'>Mar</span>
             <span className=' w-32 font-medium text-center'>Apr</span>

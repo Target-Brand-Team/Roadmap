@@ -23,6 +23,9 @@ const DashboardGrid = ({ showCultural, setShow, setShowCultural }) => {
               Culture Context
             </strong>
           </div>
+            <span className="text-sm  font- text-[#ffad00]">
+            Key Cultural - Commercial Moments
+              </span> 
         </div>
       </div>
 
@@ -40,6 +43,9 @@ const DashboardGrid = ({ showCultural, setShow, setShowCultural }) => {
               Enterprise Priorities
             </strong>
           </div>
+          <span className="text-sm  font- text-[#28354e]">   
+              TGT Forward & Inclusive Initiatives - LTO - Strategic Partnership
+              </span> 
         </div>
       </div>
 
@@ -57,6 +63,9 @@ const DashboardGrid = ({ showCultural, setShow, setShowCultural }) => {
               Owned Brand Priorities
             </strong>
           </div>
+          <span className="text-sm  font- text-[#239058]">   
+            Pyramid ( P&P - A&A - E&B - F&B - Hardlines - Home )
+              </span> 
         </div>
       </div>
     </div>

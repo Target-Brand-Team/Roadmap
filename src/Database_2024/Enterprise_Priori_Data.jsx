@@ -111,8 +111,8 @@ export const ENTERPRISE_PRIORITIES =
 					color:'#0369a1'
 				},
 				{
-					id: 1,
-					key: '01',
+					id: 2,
+					key: '02',
 					label: 'PILOOW TEST',
 					width: 140,
 					marginLeft: 3,
