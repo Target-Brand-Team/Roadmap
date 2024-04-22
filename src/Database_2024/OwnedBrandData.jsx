@@ -20,9 +20,10 @@ export const OWNED_BRAND_DATA = {
       key: "01",
       label: "Auden",
       width: 140,
-      marginLeft: 10,
-      color: "#239058",
-      image: "",
+      left: 570,
+      top: 15,
+      color: "#239058" ,
+      image: auden,
     },
   ],
 
@@ -34,7 +35,7 @@ export const OWNED_BRAND_DATA = {
       width: 140,
       left: 570,
       top: 15,
-      color: "#239058",
+      color: "#239058" ,
       image: auden,
     },
     {

@@ -8,6 +8,7 @@ import Cultural from "./Cultural";
 const Dashboard = () => {
   const [show, setShow] = useState(true);
   const [showCultural, setShowCultural] = useState(false);
+  const [showOwned, setShowOwned] = useState(false);
 
   return (
     <div className="flex flex-col gap-2 mt-1 mx-1">
@@ -18,16 +19,24 @@ const Dashboard = () => {
         showCultural={showCultural}
         setShow={setShow}
         setShowCultural={setShowCultural}
+        show={show}
+        showOwned={showOwned}
+        setShowOwned={setShowOwned}
       />
     
       <Calendar />
      
 
       {showCultural ? <Cultural /> : null}
+      
+      {show ? <Enterprise /> : null}
 
-      <div className="flex">
+      {showOwned ? <OwnedPriorities /> : null}
+
+
+      {/* <div className="flex">
         {show ? <Enterprise /> : <OwnedPriorities />}
-      </div>
+      </div> */}
     </div>
   );
 };

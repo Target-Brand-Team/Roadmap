@@ -7,6 +7,8 @@ const EnterpriseRollover = ({
   marginTop,
   text,
   backgroundColor,
+  left,
+  top,
 }) => {
 
 
@@ -15,11 +17,11 @@ const EnterpriseRollover = ({
     color: "white",
     width: width,
     height,
-    marginLeft: marginLeft,
-    marginTop,
     borderRadius: "6px",
+    left: left,
+    top: top,
     text: text,
-    backgroundImage: ``,
+    position: "absolute"
   };
 
   return (

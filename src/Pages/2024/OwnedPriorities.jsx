@@ -11,8 +11,10 @@ const OwnedPriorities = () => {
   const [modal, setModal] = useState(false);
 
   return (
+    <>
+       <h3 className="bg-targetGreen text-white text-lg font-medium rounded text-center mb-[-6px] py-2">Owned Brand Priorities</h3>
     <div className="bg-white h-[1200px] w-full flex mb-10">
-      <div className=" bg-teal-400 w-8 flex flex-col gap-1">
+      <div className=" bg-teal-400 w-[35px] flex flex-col gap-1">
         <span className="flex-1 vertical text-[13px] text-white bg-targetGreen text-center font-semibold p-1 flex justify-center items-center rounded-tr-md rounded-br-md">
           Portfolio Priorities
         </span>
@@ -255,6 +257,7 @@ const OwnedPriorities = () => {
         </div>
       ) : null}
     </div>
+    </>
   );
 };
 

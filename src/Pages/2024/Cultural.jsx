@@ -43,7 +43,7 @@ const Cultural = () => {
                     {/* ====   SECOND QUATER Q1  ==== */}
         <main className="bg-white shadow rounded p-2 gap-3 flex-1 border border-gray-200 flex justify-center items-center ">
           
-          {/* ====   FEBRUARY EVENTS ==== */}
+          {/* ====   MAY EVENTS ==== */}
           <div>
           {CULTURAL_CONTEXT_LINKS?.MAY?.map((item)=> (
             <div key={item.key} className=' text-gray-700 w-32 font-medium text-center p-1 mb-1 shadow-md rounded-md'>  
@@ -52,18 +52,18 @@ const Cultural = () => {
           ))}
           </div>
 
-          {/* ====   MARCH EVENTS ==== */}
+          {/* ====   JUNE EVENTS ==== */}
           <div>
-          {CULTURAL_CONTEXT_LINKS?.MARCH?.map((item)=> (
+          {CULTURAL_CONTEXT_LINKS?.JUNE?.map((item)=> (
             <div key={item.key} className=' text-gray-700 w-32 font-medium text-center p-1 mb-1 shadow-md rounded-md'>  
                <span>{item?.label}</span>
             </div>
           ))}
           </div>
 
-          {/* ====   APRIL EVENTS ==== */}
+          {/* ====   JULY EVENTS ==== */}
           <div>
-          {CULTURAL_CONTEXT_LINKS?.APRIL?.map((item)=> (
+          {CULTURAL_CONTEXT_LINKS?.JULY?.map((item)=> (
             <div key={item.key} className=' text-gray-700 w-32 font-medium text-center p-1 mb-1 shadow-md rounded-md'>  
                <span>{item?.label}</span>
             </div>

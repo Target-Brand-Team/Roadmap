@@ -6,7 +6,7 @@ import { IoBarChart } from "react-icons/io5";
 import { HiOutlineAnnotation } from "react-icons/hi";
 
 
-const DashboardGrid = ({ showCultural, setShow, setShowCultural }) => {
+const DashboardGrid = ({ showCultural, setShow, show, setShowCultural, setShowOwned, showOwned }) => {
   return (
     <div className="flex gap-1 mt-[-5px] ">
       
@@ -30,7 +30,7 @@ const DashboardGrid = ({ showCultural, setShow, setShowCultural }) => {
       </div>
 
       <div
-        onClick={() => setShow(true)}
+        onClick={() => setShow(!show)}
         className="bg-white hover:bg-sky-100 cursor-pointer rounded p-4 flex-1 border border-gray-200 flex items-center"
       >
         <div className="bg-[#28354e] rounded-full h-12 w-12 flex items-center justify-center">
@@ -50,7 +50,7 @@ const DashboardGrid = ({ showCultural, setShow, setShowCultural }) => {
       </div>
 
       <div
-        onClick={() => setShow(false)}
+         onClick={() => setShowOwned(!showOwned)}
         className="bg-white hover:bg-green-200 cursor-pointer rounded p-4 flex-1 border border-gray-200 flex items-center"
       >
         <div className="bg-[#239058] rounded-full h-12 w-12 flex items-center justify-center">

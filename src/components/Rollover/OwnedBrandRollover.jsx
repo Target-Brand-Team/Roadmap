@@ -25,7 +25,7 @@ const OwnedBrandRollover = ({
     <div>
       <div
         style={imageStyle}
-        className="flex  items-center font-semibold text-gray-700 hover:scale-95 transition-all cursor-pointer"
+        className="flex items-center font-semibold text-gray-700 hover:scale-95 transition-all duration-300 cursor-pointer"
       >
         <img src={image} alt="logo" className="w-12 h-12" />
       </div>

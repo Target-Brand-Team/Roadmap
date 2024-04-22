@@ -17,30 +17,22 @@ export const CULTURAL_CONTEXT_LINKS =
 			},
 			{
 				key: 'feb04',
-				label: 'Happy Feb',
+				label: 'Valentines',
 			}
 		],
 
 		MARCH: [
 			{
 				key: 'march01',
-				label: 'Coachela',
-			},
-			{
-				key: 'march02',
 				label: 'Easter',
-			}
+			},	
 		],
 
 		APRIL: [
 			{
 				key: 'april01',
-				label: 'Black Friday',
+				label: 'Coachella',
 			},
-			{
-				key: 'april02',
-				label: 'Valentines',
-			}
 		],
 
 		MAY: [
@@ -52,6 +44,20 @@ export const CULTURAL_CONTEXT_LINKS =
 				key: 'may02',
 				label: 'Memorial Day',
 			}
+		],
+
+		JUNE: [
+			{
+				key: 'june01',
+				label: 'Summer',
+			},
+		],
+
+		JULY: [
+			{
+				key: 'july01',
+				label: '04 of July',
+			},
 		],
 	}
 	

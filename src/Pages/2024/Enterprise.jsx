@@ -2,18 +2,18 @@ import React from "react";
 import EnterpriseRollover from "../../components/Rollover/EnterpriseRollover";
 import { useState } from "react";
 import { ENTERPRISE_PRIORITIES } from "../../Database_2024/Enterprise_Priori_Data";
+import OwnedPriorities from "./OwnedPriorities";
 
 const Enterprise = () => {
   const [modal, setModal] = useState(false);
   const [data, setData] = useState(ENTERPRISE_PRIORITIES);
   const [dataIndexEnterprise, setDataIndexEnterprise] = useState(null);
-  const [variable, setVariable] = useState('');
-
-  console.log(data);
+  const [variable, setVariable] = useState("");
 
 
   return (
-    <main className="flex flex-col w-[1740px]">
+    <main className="flex flex-col w-full">
+      <h3 className="bg-sky-950 text-white font-medium rounded text-center text-lg mb-1 py-2">Enterprise Priorities</h3>
       <div className="bg-white h-[450px] flex">
         <div className=" bg-teal-400 w-8 flex flex-col gap-1">
           <span className="flex-1 vertical text-[13px] text-white bg-sky-900 text-center font-semibold p-1 flex justify-center items-center rounded-tr-md rounded-br-md">
@@ -29,14 +29,15 @@ const Enterprise = () => {
           </span>
         </div>
 
+
+        <section className="w-full flex flex-col ">
         {/* === ENTERPRISE TGT === */}
-        <section className="w-screen flex flex-col ">
-          <div className="shadow flex-1 flex flex-wrap">
+          <div className="shadow flex-1 relative">
             {data?.TGT?.map((item, index) => (
               <div
-                key={item.id}
+                key={item.id} className="absolute"
                 onClick={() => {
-                  setVariable('TGT')
+                  setVariable("TGT");
                   setDataIndexEnterprise(index);
                   setModal(!modal);
                 }}
@@ -44,8 +45,8 @@ const Enterprise = () => {
                 <EnterpriseRollover
                   width={item?.width}
                   height="40px"
-                  marginLeft={item?.marginLeft}
-                  marginTop="5px"
+                  left={item?.left}
+                  top={item.top}
                   text={item.label}
                   backgroundColor={item.color}
                 />
@@ -54,12 +55,12 @@ const Enterprise = () => {
           </div>
 
           {/* === ENTERPRISE LTO === */}
-          <div className="shadow flex-1 flex flex-wrap">
+          <div className="shadow flex-1 ">
             {data?.LTO?.map((item, index) => (
               <div
-                key={item.id}
+                key={item.id} className="absolute"
                 onClick={() => {
-                  setVariable('LTO')
+                  setVariable("LTO");
                   setDataIndexEnterprise(index);
                   setModal(!modal);
                 }}
@@ -67,8 +68,8 @@ const Enterprise = () => {
                 <EnterpriseRollover
                   width={item?.width}
                   height="40px"
-                  marginLeft={item?.marginLeft}
-                  marginTop="5px"
+                  left={item?.left}
+                  top={item.top}
                   text={item.label}
                   backgroundColor={item.color}
                 />
@@ -80,9 +81,9 @@ const Enterprise = () => {
           <div className="shadow flex-1 flex flex-wrap">
             {data?.STRATEGY?.map((item, index) => (
               <div
-                key={item.id}
+                key={item.id} className="absolute"
                 onClick={() => {
-                  setVariable('STRATEGY')
+                  setVariable("STRATEGY");
                   setDataIndexEnterprise(index);
                   setModal(!modal);
                 }}
@@ -90,8 +91,8 @@ const Enterprise = () => {
                 <EnterpriseRollover
                   width={item?.width}
                   height="40px"
-                  marginLeft={item?.marginLeft}
-                  marginTop="5px"
+                  left={item?.left}
+                  top={item.top}
                   text={item.label}
                   backgroundColor={item.color}
                 />
@@ -103,23 +104,23 @@ const Enterprise = () => {
 
 
       {/* === ENTERPRISE DETAILS === */}
-      <div className="w-full h-[270px] bg-white mt-2 p-1 flex">
-        {modal ? (
-          <div className="bg-red-200 w-full">
+      {/* <div className="w-full h-[270px] bg-white mt-2 p-1 flex">
+         {modal ? ( 
+          <div className="bg-sky-50 w-full">
             {
               <>
-                <div>
-                  <span>Brand</span>
+                <div className="m-2">
+                  <h3 className="text-3xl font-semibold leading-7 text-gray-600">
+                    {data[variable][dataIndexEnterprise]?.label}
+                  </h3>
+                   <p>{data.TGT[dataIndexEnterprise].description}</p> 
                 </div>
-                <h3>{data[variable][dataIndexEnterprise].label}</h3>
-                {/* <p>{data.TGT[dataIndexEnterprise].description}</p> */}
               </>
             }
           </div>
-        ) :( null)}
-      </div>
-     
-
+        ) : null}
+      </div> */}
+      
     </main>
   );
 };
