@@ -13,7 +13,7 @@ const Sidebar = () => {
   return (
     <>
       {hideSidebar ? (
-        <div className="bg-white h-screen p- flex flex-col border-r-2 border-teal-500 text-black relative">
+        <div className="bg-white h-screen flex flex-col border border-teal-500 text-black relative">
           <div className=" mb-16 mt-16">
             <img src={Logo} className="w-[140px] ml-3" />
           </div>

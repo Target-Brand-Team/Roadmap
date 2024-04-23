@@ -20,3 +20,74 @@
   box-shadow: 3px 3px 8px -3px #ddd;
   z-index: 999;
 }
+
+
+.btn-box{
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  height: 60px;
+}
+
+.btn-2{
+  position: relative;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4rem;
+  padding: 5px 2px;
+  width: max-content;
+  height: 100%;
+  color: white;
+  font-weight: 600;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn-2::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #082f49;
+  z-index: -1;
+  transition: 0.4s;
+}
+
+.btn-2:hover::before{
+  width: 100% !important; 
+}
+
+
+
+.btn-3{
+  /* position: relative;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4rem; */
+  width: max-content;
+  height: 100%;
+  color: white;
+  font-weight: 600;
+  z-index: ;
+  overflow: hidden;
+}
+
+.btn-3::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #6b7280;
+  z-index: -1;
+  transition: 0.6s;
+}
+
+.btn-3:hover::before{
+  width: 100% !important; 
+}

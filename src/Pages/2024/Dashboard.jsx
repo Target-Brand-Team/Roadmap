@@ -11,8 +11,8 @@ const Dashboard = () => {
   const [showOwned, setShowOwned] = useState(false);
 
   return (
-    <div className="flex flex-col gap-2 mt-1 mx-1">
-      <div className="bg-white rounded-sm py-1 px-3 font-bold text-red-600 text-lg flex justify-center ">
+    <div className="flex flex-col gap-2 mt-1 mx-1"> 
+      <div className="bg-white rounded-sm py-1 px-3 font-bold text-red-600 text-lg flex justify-center">
         2024
       </div>
       <DashboardGrid
@@ -34,9 +34,6 @@ const Dashboard = () => {
       {showOwned ? <OwnedPriorities /> : null}
 
 
-      {/* <div className="flex">
-        {show ? <Enterprise /> : <OwnedPriorities />}
-      </div> */}
     </div>
   );
 };

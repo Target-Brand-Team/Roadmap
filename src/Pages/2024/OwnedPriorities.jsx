@@ -64,7 +64,7 @@ const OwnedPriorities = () => {
             }}>
               <OwnedBrandRollover
                 width={item?.width}
-                height="25px"
+                height="45px"
                 left={item.left}
                 top={item?.top}
                 text={item.label}
@@ -89,7 +89,7 @@ const OwnedPriorities = () => {
             >
               <OwnedBrandRollover
                 width={item?.width}
-                height="25px"
+                height="45px"
                 left={item.left}
                 top={item?.top}
                 text={item.label}
@@ -114,7 +114,7 @@ const OwnedPriorities = () => {
             >
               <OwnedBrandRollover
                 width={item?.width}
-                height="25px"
+                height="45px"
                 left={item.left}
                 top={item?.top}
                 text={item.label}
@@ -139,7 +139,7 @@ const OwnedPriorities = () => {
             >
               <OwnedBrandRollover
                 width={item?.width}
-                height="25px"
+                height="45px"
                 left={item.left}
                 top={item?.top}
                 text={item.label}
@@ -164,7 +164,7 @@ const OwnedPriorities = () => {
             >
               <OwnedBrandRollover
                 width={item?.width}
-                height="25px"
+                height="45px"
                 left={item.left}
                 top={item?.top}
                 text={item.label}
@@ -180,8 +180,8 @@ const OwnedPriorities = () => {
                         {/* === MODAL === */}
       {modal ? (
         //  === FADE ===
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-          <div className="bg-white w-[1000px] h-[700px] p-1 rounded-lg shadow-xl">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+          <div className="bg-white w-[1100px] h-[630px] p-1 rounded-lg shadow-xl mt-14">
             <div className="flex justify-end">
               <IoClose
                 className="text-[35px] text-gray-700 cursor-pointer"
