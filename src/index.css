@@ -18,7 +18,7 @@
   top: 0;
   left: 0;
   box-shadow: 3px 3px 8px -3px #ddd;
-  z-index: 999;
+  z-index: 9;
 }
 
 
@@ -38,7 +38,7 @@
   width: max-content;
   height: 100%;
   color: white;
-  font-weight: 600;
+  font-weight: 400;
   z-index: 1;
   overflow: hidden;
 }

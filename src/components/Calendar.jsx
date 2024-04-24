@@ -21,7 +21,7 @@ const Calendar = () => {
 
 
   return (
-    <div className='flex' ref={headerRef} >
+    <div className='flex ' ref={headerRef} >
         <div className="bg-gradient-to-t from-gray-400 rounded p-4 gap-2 border border-gray-200 flex justify-center items-center">
            
         </div>

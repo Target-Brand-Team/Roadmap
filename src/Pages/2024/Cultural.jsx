@@ -15,7 +15,7 @@ const Cultural = () => {
           {CULTURAL_CONTEXT_LINKS?.FEBRUARY?.map((item) => (
             <div
               key={item.key}
-              className="max-[1280px]:w-[70px] max-[1280px]:text-sm text-gray-700 w-32 text-center p-1 mb-1 shadow-md rounded-md"
+              className="max-[1280px]:w-[79px] max-[1280px]:text-sm text-gray-700 w-32 text-center p-1 mb-1 shadow-md rounded-md"
             >
               <span>{item?.label}</span>
             </div>
@@ -27,7 +27,7 @@ const Cultural = () => {
           {CULTURAL_CONTEXT_LINKS?.MARCH?.map((item) => (
             <div
               key={item.key}
-              className="max-[1280px]:w-[70px] max-[1280px]:text-sm text-gray-700 w-32 font-medium text-center p-1 mb-1 shadow-md rounded-md"
+              className="max-[1280px]:w-[79px] max-[1280px]:text-sm text-gray-700 w-32 text-center p-1 mb-1 shadow-md rounded-md"
             >
               <span>{item?.label}</span>
             </div>
@@ -39,7 +39,7 @@ const Cultural = () => {
           {CULTURAL_CONTEXT_LINKS?.APRIL?.map((item) => (
             <div
               key={item.key}
-              className="max-[1280px]:w-[70px] max-[1280px]:text-sm text-gray-700 w-32 font-medium text-center p-1 mb-1 shadow-md rounded-md"
+              className="max-[1280px]:w-[79px] max-[1280px]:text-sm text-gray-700 w-32 text-center p-1 mb-1 shadow-md rounded-md"
             >
               <span>{item?.label}</span>
             </div>

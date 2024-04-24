@@ -19,7 +19,7 @@ export const ENTERPRISE_PRIORITIES =
 					key: '02',
 					label: 'Earth Week',
 					width: 90,
-					left: 155,
+					left: 185,
 					top:10,
 					color:'#0c4a6e',
 					
@@ -28,8 +28,8 @@ export const ENTERPRISE_PRIORITIES =
 					id: 3,
 					key: '03',
 					label: 'Pride',
-					width: 140,
-					left: 248,
+					width: 180,
+					left: 278,
 					top:10,
 					color:'#0c4a6e'
 				},
@@ -38,7 +38,7 @@ export const ENTERPRISE_PRIORITIES =
 					key: '04',
 					label: 'UT Demin',
 					width: 90,
-					left: 490,
+					left: 550,
 					top:10,
 					color:'#0c4a6e'
 				},
@@ -46,8 +46,8 @@ export const ENTERPRISE_PRIORITIES =
 					id: 5,
 					key: '05',
 					label: 'Mas que/ Latino Heritage',
-					width: 140,
-					left: 590,
+					width: 180,
+					left: 650,
 					top: 70,
 					color:'#0c4a6e'
 				},
@@ -71,7 +71,7 @@ export const ENTERPRISE_PRIORITIES =
 					key: '01',
 					label: 'Project Sunshine',
 					width: 90,
-					left: 155,
+					left: 185,
 					top:10,
 					color:'#075985'
 				},
@@ -79,8 +79,8 @@ export const ENTERPRISE_PRIORITIES =
 					id: 2,
 					key: '02',
 					label: 'Project JOY',
-					width: 140,
-					left: 248,
+					width: 180,
+					left: 278,
 					top:10,
 					color:'#075985'
 				},
@@ -88,8 +88,8 @@ export const ENTERPRISE_PRIORITIES =
 					id: 3,
 					key: '03',
 					label: 'Fall Fashion Trends',
-					width: 140,
-					left: 590,
+					width: 180,
+					left: 650,
 					top:10,
 					color:'#075985'
 				},
@@ -98,7 +98,7 @@ export const ENTERPRISE_PRIORITIES =
 					key: '04',
 					label: 'Project Pecan',
 					width: 90,
-					left: 800,
+					left: 910,
 					top:10,
 					color:'#075985'
 				},
@@ -119,7 +119,7 @@ export const ENTERPRISE_PRIORITIES =
 					id: 2,
 					key: '02',
 					label: 'Disney Little Mermaid',
-					width: 240,
+					width: 260,
 					left: 97,
 					top:10,
 					color:'#0369a1'
@@ -128,8 +128,8 @@ export const ENTERPRISE_PRIORITIES =
 					id: 3,
 					key: '03',
 					label: 'Apple NPI',
-					width: 140,
-					left: 590,
+					width: 180,
+					left: 650,
 					top:10,
 					color:'#0369a1'
 				},
@@ -137,8 +137,8 @@ export const ENTERPRISE_PRIORITIES =
 					id: 4,
 					key: '04',
 					label: 'Disney 100th',
-					width: 140,
-					left: 735,
+					width: 160,
+					left: 832,
 					top:10,
 					color:'#0369a1'
 				},
@@ -147,7 +147,7 @@ export const ENTERPRISE_PRIORITIES =
 					key: '05',
 					label: 'Apple NPI',
 					width: 90,
-					left: 248,
+					left: 278,
 					top:70,
 					color:'#0369a1'
 				}

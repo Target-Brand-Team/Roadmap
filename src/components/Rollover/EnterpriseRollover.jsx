@@ -28,7 +28,7 @@ const EnterpriseRollover = ({
     <div>
       <div
         style={imageStyle}
-        className="btn-2 text-center font-semibold text-sm hover:scale-95 transition-all cursor-pointer"
+        className="btn-2 text-center text-sm hover:scale-95 transition-all cursor-pointer"
       >
         {text}
       </div>

@@ -13,7 +13,7 @@ const Enterprise = () => {
 
   return (
     <main className="flex flex-col w-full">
-      <h3 className="bg-sky-950 text-white font-medium rounded text-center text-lg mb-1 py-2">Enterprise Priorities</h3>
+      <h3 className="bg-sky-950 text-white font-thin rounded text-center text-lg mb-1 py-2">Enterprise Priorities</h3>
       <div className="bg-white h-[450px] flex">
         <div className=" bg-teal-400 w-8 flex flex-col gap-1">
           <span className="flex-1 vertical text-[13px] text-white bg-sky-900 text-center font-semibold p-1 flex justify-center items-center rounded-tr-md rounded-br-md">
