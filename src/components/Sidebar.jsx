@@ -13,11 +13,11 @@ const Sidebar = () => {
   return (
     <>
       {hideSidebar ? (
-        <div className="bg-white h-screen flex flex-col border border-teal-500 text-black relative">
+        <div className="bg-white h-screen flex flex-col border-r border-l border-teal-500 text-black relative">
           <div className=" mb-16 mt-16">
             <img src={Logo} className="w-[140px] ml-3" />
           </div>
-          <div className="absolute top-3 left-[130px] text-3xl text-red-600">
+          <div className="absolute top-3 left-[130px] text-2xl text-red-600">
             <RxDoubleArrowLeft
               onClick={() => setHideSidebar(!hideSidebar)}
             />
@@ -29,15 +29,15 @@ const Sidebar = () => {
           </div>
         </div>
       ) : (
-        <div className="bg-white h-screen border-r-2 border-teal-500">
+        <div className="bg-white h-screen border-l border-r border-teal-500">
           <div>
           <RxDoubleArrowRight
-            className="absolute text-3xl text-red-600 top-3 left-5 "
+            className="absolute text-2xl text-red-600 top-3 left-4 "
             onClick={() => setHideSidebar(!hideSidebar)}
           />
           </div>
           <div className="h-screen flex items-center">
-            <span className="vertical px-3 text-xl text-red-600 font-medium  ">
+            <span className="vertical pr-3 pl-2 text-xl text-red-600 font-medium  ">
               Portfolio Roadmap
             </span>
           </div>

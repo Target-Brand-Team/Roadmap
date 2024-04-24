@@ -25,25 +25,25 @@ const Calendar = () => {
         <div className="bg-gradient-to-t from-gray-400 rounded p-4 gap-2 border border-gray-200 flex justify-center items-center">
            
         </div>
-        <div className="max-[1280px]:w-[240px] bg-gradient-to-t from-gray-400 rounded p-2 py-5 gap-2 flex-1 border border-gray-200 flex justify-center items-center">
-            <span className=' w-32 font-medium text-center'>Feb</span>
-            <span className=' w-32 font-medium text-center'>Mar</span>
-            <span className=' w-32 font-medium text-center'>Apr</span>
+        <div className="max-[1280px]:w-[240px] max-[1280px]:text-sm bg-gradient-to-t from-gray-400 rounded text-gray-600 p-2 py-5 gap-2 flex-1 border border-gray-200 flex justify-center items-center">
+            <span className=' w-32 font-semibold text-center'>Feb</span>
+            <span className=' w-32 font-semibold text-center'>Mar</span>
+            <span className=' w-32 font-semibold text-center'>Apr</span>
         </div>
-        <div className="max-[1280px]:w-[240px] bg-gradient-to-t from-gray-400 rounded p-2 gap-2 flex-1 border border-gray-200 flex justify-center items-center">
-            <span className=' w-32 font-medium text-center'>May</span>
-            <span className=' w-32 font-medium text-center'>Jun</span>
-            <span className=' w-32 font-medium text-center'>Jul</span>
+        <div className="max-[1280px]:w-[240px] max-[1280px]:text-sm bg-gradient-to-t from-gray-400 rounded  text-gray-600 p-2 gap-2 flex-1 border border-gray-200 flex justify-center items-center">
+            <span className=' w-32 font-semibold text-center'>May</span>
+            <span className=' w-32 font-semibold text-center'>Jun</span>
+            <span className=' w-32 font-semibold text-center'>Jul</span>
         </div>
-        <div className="max-[1280px]:w-[240px] bg-gradient-to-t from-gray-400 rounded p-2 gap-2 flex-1 border border-gray-200 flex justify-center items-center">
-            <span className=' w-32 font-medium text-center'>Aug</span>
-            <span className=' w-32 font-medium text-center'>Sep</span>
-            <span className=' w-32 font-medium text-center'>Oct</span>
+        <div className="max-[1280px]:w-[240px] max-[1280px]:text-sm bg-gradient-to-t from-gray-400 rounded  text-gray-600 p-2 gap-2 flex-1 border border-gray-200 flex justify-center items-center">
+            <span className=' w-32 font-semibold text-center'>Aug</span>
+            <span className=' w-32 font-semibold text-center'>Sep</span>
+            <span className=' w-32 font-semibold text-center'>Oct</span>
         </div>
-        <div className="max-[1280px]:w-[240px] bg-gradient-to-t from-gray-400 rounded p-2 gap-2 flex-1 border border-gray-200 flex justify-center items-center">
-            <span className=' w-32 font-medium text-center'>Nov</span>
-            <span className=' w-32 font-medium text-center'>Dec</span>
-            <span className=' w-32 font-medium text-center'>Jan</span>
+        <div className="max-[1280px]:w-[240px] max-[1280px]:text-sm bg-gradient-to-t from-gray-400 rounded  text-gray-600 p-2 gap-2 flex-1 border border-gray-200 flex justify-center items-center">
+            <span className=' w-32 font-semibold text-center'>Nov</span>
+            <span className=' w-32 font-semibold text-center'>Dec</span>
+            <span className=' w-32 font-semibold text-center'>Jan</span>
         </div>
        
     </div>

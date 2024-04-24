@@ -30,9 +30,9 @@ const Enterprise = () => {
         </div>
 
 
-        <section className="w-full flex flex-col ">
+        <section className="w-full flex flex-col">
         {/* === ENTERPRISE TGT === */}
-          <div className="shadow flex-1 relative">
+          <div className="shadow flex-1 relative ">
             {data?.TGT?.map((item, index) => (
               <div
                 key={item.id} className="absolute"
@@ -55,7 +55,7 @@ const Enterprise = () => {
           </div>
 
           {/* === ENTERPRISE LTO === */}
-          <div className="shadow flex-1 ">
+          <div className="shadow flex-1 relative ">
             {data?.LTO?.map((item, index) => (
               <div
                 key={item.id} className="absolute"
@@ -78,7 +78,7 @@ const Enterprise = () => {
           </div>
 
           {/* === ENTERPRISE STRATEGY === */}
-          <div className="shadow flex-1 flex flex-wrap">
+          <div className="shadow flex-1 ">
             {data?.STRATEGY?.map((item, index) => (
               <div
                 key={item.id} className="absolute"

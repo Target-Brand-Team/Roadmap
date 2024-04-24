@@ -19,7 +19,7 @@ const OwnedBrandRollover = ({
     text: text,
     left: left,
     top: top,
-    position: "absolute"
+    position: "absolute",
   };
 
   
@@ -29,7 +29,7 @@ const OwnedBrandRollover = ({
       <div style={imageStyle} className="btn-3 bg-gray-200 flex items-center font-semibold text-gray-700  hover:scale-95 duration-500 transition-all cursor-pointer">
      
 
-        <img src={image} alt="logo" className="w-12 h-12"/>
+        <img src={image} alt="logo" className="w-10 h-10"/>
      
 
      </div>

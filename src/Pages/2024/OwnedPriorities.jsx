@@ -13,7 +13,7 @@ const OwnedPriorities = () => {
   return (
     <>
        <h3 className="bg-targetGreen text-white text-lg font-medium rounded text-center mb-[-6px] py-2">Owned Brand Priorities</h3>
-    <div className="bg-white h-[1200px] w-full flex mb-10">
+    <div className="bg-white h-[1500px] w-full flex mb-10">
       <div className=" bg-teal-400 w-[35px] flex flex-col gap-1">
         <span className="flex-1 vertical text-[13px] text-white bg-targetGreen text-center font-semibold p-1 flex justify-center items-center rounded-tr-md rounded-br-md">
           Portfolio Priorities
@@ -64,7 +64,7 @@ const OwnedPriorities = () => {
             }}>
               <OwnedBrandRollover
                 width={item?.width}
-                height="45px"
+                height="35px"
                 left={item.left}
                 top={item?.top}
                 text={item.label}
@@ -89,7 +89,7 @@ const OwnedPriorities = () => {
             >
               <OwnedBrandRollover
                 width={item?.width}
-                height="45px"
+                height="35px"
                 left={item.left}
                 top={item?.top}
                 text={item.label}
@@ -114,7 +114,7 @@ const OwnedPriorities = () => {
             >
               <OwnedBrandRollover
                 width={item?.width}
-                height="45px"
+                height="35px"
                 left={item.left}
                 top={item?.top}
                 text={item.label}
@@ -139,7 +139,7 @@ const OwnedPriorities = () => {
             >
               <OwnedBrandRollover
                 width={item?.width}
-                height="45px"
+                height="35px"
                 left={item.left}
                 top={item?.top}
                 text={item.label}
@@ -164,7 +164,7 @@ const OwnedPriorities = () => {
             >
               <OwnedBrandRollover
                 width={item?.width}
-                height="45px"
+                height="35px"
                 left={item.left}
                 top={item?.top}
                 text={item.label}
@@ -181,7 +181,7 @@ const OwnedPriorities = () => {
       {modal ? (
         //  === FADE ===
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-          <div className="bg-white w-[1100px] h-[630px] p-1 rounded-lg shadow-xl mt-14">
+          <div className="bg-white w-[900px] h-[650px] p-1 rounded-lg shadow-xl mt-14">
             <div className="flex justify-end">
               <IoClose
                 className="text-[35px] text-gray-700 cursor-pointer"
@@ -191,18 +191,18 @@ const OwnedPriorities = () => {
             {
               <>
                 <div className="px-8">
-                  <div className="px-4 sm:px-0 flex items-center gap-5">
+                  <div className="px-4 mt-[-18px] sm:px-0 flex items-center gap-5">
                     
                       <div>
-                        <img src={ownedData[ownedVariable][dataIndexOwnedBrand]?.image} alt="" className="w-24"/>
+                        <img src={ownedData[ownedVariable][dataIndexOwnedBrand]?.image} alt="" className="w-20"/>
                       </div>
                       <h3 className="text-3xl font-semibold leading-7 text-gray-500">
                       {ownedData[ownedVariable][dataIndexOwnedBrand]?.label}
                     </h3>
                   </div>
-                  <div className="mt-6 border-t border-gray-100">
+                  <div className="mt-5 border-t border-gray-100">
                     <dl className="divide-y divide-gray-100">
-                      <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                      <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-24 sm:px-0">
                         <span className=" font-semibold leading-6 text-gray-900">
                           Pyramids
                         </span>
@@ -224,7 +224,7 @@ const OwnedPriorities = () => {
                         {ownedData[ownedVariable][dataIndexOwnedBrand]?.goal}
                         </dd>
                       </div>
-                      <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                      <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-24 sm:px-0">
                         <dt className="font-semibold leading-6 text-gray-900">
                           What's happening with the Brand?
                         </dt>

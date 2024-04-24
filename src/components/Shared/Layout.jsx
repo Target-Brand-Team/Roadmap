@@ -4,7 +4,7 @@ import Sidebar from "../Sidebar";
 
 const Layout = () => {
   return (
-    <div className="flex flex-row bg-neutral-100 h-screen w-screen">
+    <div className="flex flex-row bg-neutral-100 h-screen w-screen max-[1280px]:w-[1260px]">
       <Sidebar />
 
         <div className="">
