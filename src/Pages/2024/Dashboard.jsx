@@ -7,8 +7,8 @@ import Cultural from "./Cultural";
 
 const Dashboard = () => {
   const [show, setShow] = useState(true);
-  const [showCultural, setShowCultural] = useState(false);
-  const [showOwned, setShowOwned] = useState(false);
+  const [showCultural, setShowCultural] = useState(true);
+  const [showOwned, setShowOwned] = useState(true);
 
   return (
     <div className="flex flex-col gap-2 mt-1 mx-1 max-[1200px]:w-[1000px]"> 

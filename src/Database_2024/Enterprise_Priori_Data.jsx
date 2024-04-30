@@ -9,7 +9,7 @@ export const ENTERPRISE_PRIORITIES =
 					key: '01',
 					label: 'Black Beyond',
 					width: 90,
-					left: 3,
+					left: 45,
 					top:10,
 					color:'#0c4a6e',
 					description: "testing program"
@@ -56,7 +56,7 @@ export const ENTERPRISE_PRIORITIES =
 					key: '06',
 					label: 'Nikolas Collection',
 					width: 90,
-					left: 3,
+					left: 45,
 					top: 70,
 					color:'#0c4a6e'
 				},
@@ -111,7 +111,7 @@ export const ENTERPRISE_PRIORITIES =
 					key: '01',
 					label: 'Apple Wellbeing',
 					width: 90,
-					left: 3,
+					left: 45,
 					top:10,
 					color:'#0369a1'
 				},
@@ -120,7 +120,7 @@ export const ENTERPRISE_PRIORITIES =
 					key: '02',
 					label: 'Disney Little Mermaid',
 					width: 260,
-					left: 97,
+					left: 147,
 					top:10,
 					color:'#0369a1'
 				},
