@@ -163,7 +163,7 @@ const OwnedPriorities = () => {
                 >
                   <OwnedBrandRollover
                     width={item?.width}
-                    height="35px"
+                    height="40px"
                     left={item.left}
                     top={item?.top}
                     text={item.label}
@@ -203,7 +203,7 @@ const OwnedPriorities = () => {
                 >
                   <OwnedBrandRollover
                     width={item?.width}
-                    height="35px"
+                    height="40px"
                     left={item.left}
                     top={item?.top}
                     text={item.label}
@@ -241,7 +241,7 @@ const OwnedPriorities = () => {
                 >
                   <OwnedBrandRollover
                     width={item?.width}
-                    height="35px"
+                    height="40px"
                     left={item.left}
                     top={item?.top}
                     text={item.label}

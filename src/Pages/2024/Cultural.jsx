@@ -9,13 +9,13 @@ const Cultural = () => {
       </div>
 
       {/* ====   FIRST QUATER Q1  ==== */}
-      <main className="max-[1280px]:w-[245px] bg-white shadow rounded pt-1  border border-gray-200 flex gap-1 ">
+      <main className="max-[1280px]:w-[252px] bg-white shadow rounded pt-1  border border-gray-200 flex gap-1 ">
         {/* ====   FEBRUARY EVENTS ==== */}
         <div>
           {CULTURAL_CONTEXT_LINKS?.FEBRUARY?.map((item) => (
             <div
               key={item.key}
-              className="max-[1280px]:w-[77px] max-[1280px]:text-[12px] text-gray-700 bg-red-200 font-medium text-center px-1 py-1 mb-1 shadow-md rounded-md"
+              className="max-[1280px]:w-[80px] max-[1280px]:text-[12px] text-gray-700 bg-red-200 font-medium text-center px-1 py-1 mb-1 shadow-md rounded-md"
             >
               <span>{item?.label}</span>
             </div>
@@ -27,7 +27,7 @@ const Cultural = () => {
           {CULTURAL_CONTEXT_LINKS?.MARCH?.map((item) => (
             <div
               key={item.key}
-              className="max-[1280px]:w-[77px] max-[1280px]:text-[12px] text-gray-700 w-32 font-medium text-center p-1 mb-1 shadow-md rounded-md"
+              className="max-[1280px]:w-[80px] max-[1280px]:text-[12px] text-gray-700 w-32 font-medium text-center p-1 mb-1 shadow-md rounded-md"
             >
               <span>{item?.label}</span>
             </div>
@@ -39,7 +39,7 @@ const Cultural = () => {
           {CULTURAL_CONTEXT_LINKS?.APRIL?.map((item) => (
             <div
               key={item.key}
-              className="max-[1280px]:w-[77px] max-[1280px]:text-[12px] text-gray-700 w-32 font-medium text-center p-1 mb-1 shadow-md rounded-md"
+              className="max-[1280px]:w-[80px] max-[1280px]:text-[12px] text-gray-700 w-32 font-medium text-center p-1 mb-1 shadow-md rounded-md"
             >
               <span>{item?.label}</span>
             </div>
@@ -54,7 +54,7 @@ const Cultural = () => {
           {CULTURAL_CONTEXT_LINKS?.MAY?.map((item) => (
             <div
               key={item.key}
-              className="max-[1280px]:w-[77px] max-[1280px]:text-[12px] text-gray-700 w-32 font-medium text-center p-1 mb-1 shadow-md rounded-md"
+              className="max-[1280px]:w-[80px] max-[1280px]:text-[12px] text-gray-700 w-32 font-medium text-center p-1 mb-1 shadow-md rounded-md"
             >
               <span>{item?.label}</span>
             </div>
@@ -66,7 +66,7 @@ const Cultural = () => {
           {CULTURAL_CONTEXT_LINKS?.JUNE?.map((item) => (
             <div
               key={item.key}
-              className="max-[1280px]:w-[77px] max-[1280px]:text-[12px] text-gray-700 w-32 font-medium text-center p-1 mb-1 shadow-md rounded-md"
+              className="max-[1280px]:w-[80px] max-[1280px]:text-[12px] text-gray-700 w-32 font-medium text-center p-1 mb-1 shadow-md rounded-md"
             >
               <span>{item?.label}</span>
             </div>
@@ -78,7 +78,7 @@ const Cultural = () => {
           {CULTURAL_CONTEXT_LINKS?.JULY?.map((item) => (
             <div
               key={item.key}
-              className="max-[1280px]:w-[77px] max-[1280px]:text-[12px] text-gray-700 w-32 font-medium text-center p-1 mb-1 shadow-md rounded-md"
+              className="max-[1280px]:w-[80px] max-[1280px]:text-[12px] text-gray-700 w-32 font-medium text-center p-1 mb-1 shadow-md rounded-md"
             >
               <span>{item?.label}</span>
             </div>
@@ -93,7 +93,7 @@ const Cultural = () => {
           {CULTURAL_CONTEXT_LINKS?.MAY?.map((item) => (
             <div
               key={item.key}
-              className="max-[1280px]:w-[77px] max-[1280px]:text-[12px] text-gray-700 w-32 font-medium text-center p-1 mb-1 shadow-md rounded-md"
+              className="max-[1280px]:w-[80px] max-[1280px]:text-[12px] text-gray-700 w-32 font-medium text-center p-1 mb-1 shadow-md rounded-md"
             >
               <span>{item?.label}</span>
             </div>
@@ -105,7 +105,7 @@ const Cultural = () => {
           {CULTURAL_CONTEXT_LINKS?.JUNE?.map((item) => (
             <div
               key={item.key}
-              className="max-[1280px]:w-[77px] max-[1280px]:text-[12px] text-gray-700 w-32 font-medium text-center p-1 mb-1 shadow-md rounded-md"
+              className="max-[1280px]:w-[80px] max-[1280px]:text-[12px] text-gray-700 w-32 font-medium text-center p-1 mb-1 shadow-md rounded-md"
             >
               <span>{item?.label}</span>
             </div>
@@ -117,7 +117,7 @@ const Cultural = () => {
           {CULTURAL_CONTEXT_LINKS?.JULY?.map((item) => (
             <div
               key={item.key}
-              className="max-[1280px]:w-[77px] max-[1280px]:text-[12px] text-gray-700 w-32 font-medium text-center p-1 mb-1 shadow-md rounded-md"
+              className="max-[1280px]:w-[80px] max-[1280px]:text-[12px] text-gray-700 w-32 font-medium text-center p-1 mb-1 shadow-md rounded-md"
             >
               <span>{item?.label}</span>
             </div>
@@ -132,7 +132,7 @@ const Cultural = () => {
           {CULTURAL_CONTEXT_LINKS?.MAY?.map((item) => (
             <div
               key={item.key}
-              className="max-[1280px]:w-[77px] max-[1280px]:text-[12px] text-gray-700 w-32 font-medium text-center p-1 mb-1 shadow-md rounded-md"
+              className="max-[1280px]:w-[80px] max-[1280px]:text-[12px] text-gray-700 w-32 font-medium text-center p-1 mb-1 shadow-md rounded-md"
             >
               <span>{item?.label}</span>
             </div>
@@ -144,7 +144,7 @@ const Cultural = () => {
           {CULTURAL_CONTEXT_LINKS?.JUNE?.map((item) => (
             <div
               key={item.key}
-              className="max-[1280px]:w-[77px] max-[1280px]:text-[12px] text-gray-700 w-32 font-medium text-center p-1 mb-1 shadow-md rounded-md"
+              className="max-[1280px]:w-[80px] max-[1280px]:text-[12px] text-gray-700 w-32 font-medium text-center p-1 mb-1 shadow-md rounded-md"
             >
               <span>{item?.label}</span>
             </div>
@@ -156,7 +156,7 @@ const Cultural = () => {
           {CULTURAL_CONTEXT_LINKS?.JULY?.map((item) => (
             <div
               key={item.key}
-              className="max-[1280px]:w-[77px] max-[1280px]:text-[12px] text-gray-700 w-32 font-medium text-center p-1 mb-1 shadow-md rounded-md"
+              className="max-[1280px]:w-[80px] max-[1280px]:text-[12px] text-gray-700 w-32 font-medium text-center p-1 mb-1 shadow-md rounded-md"
             >
               <span>{item?.label}</span>
             </div>

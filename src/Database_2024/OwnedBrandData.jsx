@@ -33,8 +33,8 @@ export const OWNED_BRAND_DATA = {
     {
       id: 1,
       key: "01",
-      width: 90,
-      left: 435,
+      width: 100,
+      left: 445,
       top: 15,
       color: "#9ca3af",
       label: "Auden",
@@ -52,8 +52,8 @@ export const OWNED_BRAND_DATA = {
     {
       id: 2,
       key: "02",
-      width: 90,
-      left: 680,
+      width: 100,
+      left: 700,
       top: 15,
       color: "#9ca3af",
       label: "Shade & Shore",
@@ -72,8 +72,8 @@ export const OWNED_BRAND_DATA = {
       id: 3,
       key: "03",
       label: "Stars & Above",
-      width: 90,
-      left: 435,
+      width: 100,
+      left: 445,
       top: 70,
       color: "#9ca3af",
       image: starsAbove,
@@ -84,7 +84,7 @@ export const OWNED_BRAND_DATA = {
     {
       id: 1,
       key: "01",
-      width: 155,
+      width: 165,
       left: 40,
       top: 10,
       color: "#9ca3af",
@@ -103,7 +103,7 @@ export const OWNED_BRAND_DATA = {
     {
       id: 2,
       key: "02",
-      width: 155,
+      width: 165,
       left: 40,
       top: 65,
       color: "#9ca3af",
@@ -113,7 +113,7 @@ export const OWNED_BRAND_DATA = {
     {
       id: 3,
       key: "03",
-      width: 155,
+      width: 165,
       left: 40,
       top: 118,
       color: "#9ca3af",
@@ -126,7 +126,7 @@ export const OWNED_BRAND_DATA = {
     {
       id: 1,
       key: "01",
-      width: 485,
+      width: 500,
       left: 40,
       top: 15,
       color: "#9ca3af",
@@ -145,8 +145,8 @@ export const OWNED_BRAND_DATA = {
     {
       id: 2,
       key: "02",
-      width: 480,
-      left: 530,
+      width: 505,
+      left: 540,
       top: 15,
       color: "#9ca3af",
       label: "Favorite Day",
@@ -164,8 +164,8 @@ export const OWNED_BRAND_DATA = {
     {
       id: 3,
       key: "03",
-      width: 480,
-      left: 530,
+      width: 505,
+      left: 540,
       top: 70,
       color: "#9ca3af",
       label: "Market Pantry",
@@ -186,7 +186,7 @@ export const OWNED_BRAND_DATA = {
     {
       id: 1,
       key: "01",
-      width: 565,
+      width: 585,
       left: 40,
       top: 15,
       color: "#9ca3af",
@@ -205,8 +205,8 @@ export const OWNED_BRAND_DATA = {
     {
       id: 2,
       key: "02",
-      width: 90,
-      left: 925,
+      width: 100,
+      left: 945,
       top: 15,
       color: "#9ca3af",
       label: "Giggle Scape",
@@ -224,7 +224,7 @@ export const OWNED_BRAND_DATA = {
     {
       id: 3,
       key: "03",
-      width: 235,
+      width: 245,
       left: 40,
       top: 70,
       color: "#9ca3af",
@@ -246,7 +246,7 @@ export const OWNED_BRAND_DATA = {
     {
       id: 1,
       key: "01",
-      width: 90,
+      width: 100,
       left: 195,
       top: 10,
       color: "#9ca3af",
@@ -265,8 +265,8 @@ export const OWNED_BRAND_DATA = {
     {
       id: 2,
       key: "02",
-      width: 90,
-      left: 360,
+      width: 100,
+      left: 370,
       top: 10,
       color: "#9ca3af",
       label: "Brightroom",
@@ -284,7 +284,7 @@ export const OWNED_BRAND_DATA = {
     {
       id: 3,
       key: "03",
-      width: 810,
+      width: 840,
       left: 120,
       top: 61,
       color: "#9ca3af",
@@ -303,7 +303,7 @@ export const OWNED_BRAND_DATA = {
     {
       id: 4,
       key: "04",
-      width: 810,
+      width: 840,
       left: 120,
       top: 113,
       color: "#9ca3af",
@@ -322,7 +322,7 @@ export const OWNED_BRAND_DATA = {
     {
       id: 5,
       key: "05",
-      width: 810,
+      width: 840,
       left: 120,
       top: 163,
       color: "#9ca3af",
@@ -341,7 +341,7 @@ export const OWNED_BRAND_DATA = {
     {
       id: 6,
       key: "06",
-      width: 810,
+      width: 840,
       left: 120,
       top: 210,
       color: "#9ca3af",
