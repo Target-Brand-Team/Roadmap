@@ -36,12 +36,12 @@ const DashboardGrid = ({
         </div>
 
         {showCultural ? (
-          <div className="h-full w-6 pt-1 flex text-lg justify-center items-start  ">
-            <HiChevronDoubleUp className="ml-" />
+          <div className="h-full w-6 ml-12 text-2xl flex justify-center items-start   ">
+            <HiChevronDoubleUp className="text-[#ffad00]" />
           </div>
         ) : (
-          <div className="h-full w-6 pt-1 flex text-lg justify-center items-start">
-            <HiChevronDoubleDown className="ml-" />
+          <div className="h-full w-6 ml-12 text-2xl flex justify-center items-start">
+            <HiChevronDoubleDown className="text-[#ffad00]" />
           </div>
         )}
       </div>
@@ -66,12 +66,12 @@ const DashboardGrid = ({
         </div>
 
         {show ? (
-          <div className="h-full w-8 pt-1 pl-3 flex text-lg justify-center items-start ">
-            <HiChevronDoubleUp className="ml-" />
+          <div className="h-full w-9 pl-3 ml-12 text-xl flex justify-center items-start ">
+            <HiChevronDoubleUp className="text-[#28354e]" />
           </div>
         ) : (
-          <div className="h-full w-8 pt-1 pl-3 flex text-lg justify-center items-start">
-            <HiChevronDoubleDown className="ml-" />
+          <div className="h-full w-9 pl-3 ml-12 text-2xl flex justify-center items-start">
+            <HiChevronDoubleDown className="text-[#28354e]" />
           </div>
         )}
       </div>
@@ -94,12 +94,12 @@ const DashboardGrid = ({
         </div>
 
         {showOwned ? (
-          <div className="h-full w-8 pt-1 pl-3 flex text-lg justify-center items-start ">
-            <HiChevronDoubleUp className="ml-" />
+          <div className="h-full w-9 pl-3 ml-10 text-2xl flex justify-center items-start ">
+            <HiChevronDoubleUp className="text-[#239058]" />
           </div>
         ) : (
-          <div className="h-full w-8 pt-1 pl-3 flex text-lg justify-center items-start">
-            <HiChevronDoubleDown className="ml-" />
+          <div className="h-full w-9 pl-3 ml-10 text-2xl flex justify-center items-start">
+            <HiChevronDoubleDown className="text-[#239058]" />
           </div>
         )}
       </div>

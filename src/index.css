@@ -62,11 +62,7 @@
 
 
 .btn-3{
-  /* position: relative;
-  display: inline;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0.4rem; */
+ 
   width: max-content;
   height: 100%;
   color: white;
@@ -89,4 +85,20 @@
 
 .btn-3:hover::before{
   width: 100% !important; 
+}
+
+
+.divider {
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.divider::before{
+  flex: 1;
+  content: '';
+  padding: 1px;
+  background-color: #2dd4bf;
+  margin: 1px;
+  margin-top: 27px;
 }

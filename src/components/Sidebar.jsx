@@ -13,10 +13,13 @@ const Sidebar = () => {
   return (
     <>
       {hideSidebar ? (
-        <div className="bg-white h-screen w-32 flex flex-col border-r border-l border-teal-400 text-black relative">
+        <div className="bg-white h-screen w-32 p- flex flex-col border-r border-l border-teal-400 text-black relative">
           <div className=" mb-16 mt-16">
             <img src={Logo} className="w-[110px] ml-2" />
           </div>
+
+          <span className="divider"></span>
+
           <div className="absolute top-3 left-[130px] text-2xl text-red-600">
             {/* <RxDoubleArrowLeft
               onClick={() => setHideSidebar(!hideSidebar)}
@@ -55,8 +58,8 @@ const SidebarLink = ({ item }) => {
       to={item.path}
       className={
         pathname === item.path
-          ? "flex items-center gap-3 py-5 px-3 mx-4 font-medium text-base  hover:bg-red-400 rounded-md text-red-800"
-          : "flex items-center gap-3 py-5 px-3 mx-4 font-medium text-base  hover:bg-red-200 rounded-md text-neutral-500"
+          ? "flex items-center gap-3 py-3 px-4 mx-2 mt-4 font-medium text-base  hover:bg-red-400 rounded-md text-white bg-red-600"
+          : "flex items-center gap-3 py-3 px-4 mx-2 mt-4 font-medium text-base  hover:bg-red-200 rounded-md text-neutral-500"
       }
     >
       <span className="text-xl">{item.icon}</span>

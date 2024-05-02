@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { OWNED_BRAND_DATA } from "../../Database_2024/OwnedBrandData";
 import OwnedBrandRollover from "../../components/Rollover/OwnedBrandRollover";
 import { IoClose } from "react-icons/io5";
-import dealworthy from "../../assets/Dealworthy.png";
+
 
 const OwnedPriorities = () => {
   const [ownedData, setownedData] = useState(OWNED_BRAND_DATA);
@@ -18,7 +18,7 @@ const OwnedPriorities = () => {
 
   return (
     <>
-      <h3 className="bg-[#165a37] text-white text-lg font rounded text-center mb-[-6px] py-2">
+      <h3 className="bg-green-950 text-white text-lg font rounded text-center mb-[-6px] py-2">
         Owned Brand Priorities
       </h3>
       <div className="bg-white h-[1500px] w-full flex mb-10">
@@ -26,7 +26,7 @@ const OwnedPriorities = () => {
           {/* ===================================== PORTFOLIO PRIORITIES */}
           {priorityToggle ? (
             <h3
-              className="bg-targetGreen text-white hover:bg-[#165a37] text-th font-thin rounded text-center py-2 cursor-pointer"
+              className="bg-green-900 text-white hover:bg-green-950 text-th font-thin rounded text-center py-2 cursor-pointer"
               onClick={() => setPriorityToggle(false)}
             >
               Portfolio Priorities
@@ -34,7 +34,7 @@ const OwnedPriorities = () => {
           ) : (
             <div className="shadow h-48 flex flex-wrap relative">
               <span
-                className="vertical text-[13px] text-white bg-targetGreen hover:bg-[#165a37] text-center font-semibold p-2 flex justify-center items-center rounded-tr-md rounded-br-md cursor-pointer"
+                className="vertical text-[13px] text-white bg-green-900 hover:bg-green-950 text-center font-semibold p-2 flex justify-center items-center rounded-tr-md rounded-br-md cursor-pointer"
                 onClick={() => setPriorityToggle(true)}
               >
                 Portfolio Priorities
@@ -58,7 +58,7 @@ const OwnedPriorities = () => {
           {/* ===================================== ACCESSORIES & APPAREL */}
           {accessoriesToggle ? (
             <h3
-              className="bg-targetGreen text-white hover:bg-[#165a37] text-th font-thin rounded text-center py-2 cursor-pointer"
+              className="bg-green-800 text-white hover:bg-green-950 text-th font-thin rounded text-center py-2 cursor-pointer"
               onClick={() => setAccessoriesToggle(false)}
             >
               Accessories & Apparel
@@ -66,7 +66,7 @@ const OwnedPriorities = () => {
           ) : (
             <div className="shadow h-48 flex flex-wrap relative">
               <span
-                className="vertical text-[13px] text-white bg-targetGreen hover:bg-[#165a37] text-center font-semibold p-2 flex justify-center items-center rounded-tr-md rounded-br-md cursor-pointer"
+                className="vertical text-[13px] text-white bg-green-800 hover:bg-green-950 text-center font-semibold p-2 flex justify-center items-center rounded-tr-md rounded-br-md cursor-pointer"
                 onClick={() => setAccessoriesToggle(true)}
               >
                 Accessories & Apparel
@@ -83,7 +83,7 @@ const OwnedPriorities = () => {
                 >
                   <OwnedBrandRollover
                     width={item?.width}
-                    height="35px"
+                    height="40px"
                     left={item.left}
                     top={item?.top}
                     text={item.label}
@@ -98,7 +98,7 @@ const OwnedPriorities = () => {
           {/* ======================================== ESSENTIALS & BEAUTY */}
           {essentialToggle ? (
             <h3
-              className="bg-targetGreen text-white hover:bg-[#165a37] text-th font-thin rounded text-center py-2 cursor-pointer"
+              className="bg-green-700 text-white hover:bg-green-950 text-th font-thin rounded text-center py-2 cursor-pointer"
               onClick={() => setEssentialToggle(false)}
             >
               Essentials & Beauty
@@ -106,7 +106,7 @@ const OwnedPriorities = () => {
           ) : (
             <div className="shadow h-48 flex flex-wrap relative">
               <span
-                className="vertical text-[13px] text-white bg-targetGreen text-center font-semibold p-2 hover:bg-[#165a37] cursor-pointer rounded-tr-md rounded-br-md"
+                className="vertical text-[13px] text-white bg-green-700 text-center font-semibold p-2 hover:bg-green-950 cursor-pointer rounded-tr-md rounded-br-md"
                 onClick={() => setEssentialToggle(true)}
               >
                 Essentials & Beauty
@@ -123,7 +123,7 @@ const OwnedPriorities = () => {
                 >
                   <OwnedBrandRollover
                     width={item?.width}
-                    height="35px"
+                    height="40px"
                     left={item.left}
                     top={item?.top}
                     text={item.label}
@@ -138,7 +138,7 @@ const OwnedPriorities = () => {
           {/* ============================ FOOD & BEVERAGE */}
           {foodToggle ? (
             <h3
-              className="bg-targetGreen text-white hover:bg-[#165a37] text-th font-thin rounded text-center py-2 cursor-pointer"
+              className="bg-green-600 text-white hover:bg-green-950 text-th font-thin rounded text-center py-2 cursor-pointer"
               onClick={() => setFoodToggle(false)}
             >
               Food & Beverage
@@ -146,7 +146,7 @@ const OwnedPriorities = () => {
           ) : (
             <div className="shadow h-48 flex flex-wrap relative">
               <span
-                className="vertical text-[13px] text-white bg-targetGreen text-center font-semibold p-2 hover:bg-[#165a37] cursor-pointer rounded-tr-md rounded-br-md"
+                className="vertical text-[13px] text-white bg-green-600 text-center font-semibold p-2 hover:bg-green-950 cursor-pointer rounded-tr-md rounded-br-md"
                 onClick={() => setFoodToggle(true)}
               >
                 Food & Beverage
@@ -178,7 +178,7 @@ const OwnedPriorities = () => {
           {/* ================================= HARDLINES */}
           {hardlinesToggle ? (
             <h3
-              className="bg-targetGreen text-white hover:bg-[#165a37] text-th font-thin rounded text-center py-2 cursor-pointer"
+              className="bg-green-500 text-white hover:bg-green-950 text-th font-thin rounded text-center py-2 cursor-pointer"
               onClick={() => setHardlinesToggle(false)}
             >
               Hardlines
@@ -186,7 +186,7 @@ const OwnedPriorities = () => {
           ) : (
             <div className="shadow h-48 flex flex-wrap relative">
               <span
-                className="vertical text-[13px] text-white bg-targetGreen text-center font-semibold p-2 hover:bg-[#165a37] cursor-pointer rounded-tr-md rounded-br-md"
+                className="vertical text-[13px] text-white bg-green-500 text-center font-semibold p-2 hover:bg-green-950 cursor-pointer rounded-tr-md rounded-br-md"
                 onClick={() => setHardlinesToggle(true)}
               >
                 Hardlines
@@ -218,14 +218,14 @@ const OwnedPriorities = () => {
           {/* ======================================= HOME */}
           {homeToggle ? (
             <h3
-              className="bg-targetGreen text-white hover:bg-[#165a37] text-th font-thin rounded text-center py-2 cursor-pointer"
+              className="bg-green-400 text-white hover:bg-green-950 text-th font-thin rounded text-center py-2 cursor-pointer"
               onClick={() => setHomeToggle(false)}
             >
               Home
             </h3>
           ) : (
             <div className="shadow h-64 flex flex-wrap relative">
-              <span className="vertical text-[13px] text-white bg-targetGreen text-center font-semibold p-2 hover:bg-[#165a37] cursor-pointer rounded-tr-md rounded-br-md" 
+              <span className="vertical text-[13px] text-white bg-green-400 text-center font-semibold p-2 hover:bg-green-950 cursor-pointer rounded-tr-md rounded-br-md" 
               onClick={() => setHomeToggle(true)}>
                 Home
               </span>
@@ -289,7 +289,7 @@ const OwnedPriorities = () => {
                       <dl className="divide-y divide-gray-100">
                         <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-24 sm:px-0">
                           <span className=" font-semibold leading-6 text-gray-900">
-                            Pyramids
+                            Pyramids:
                           </span>
                           <dd className="mt-1 leading-6 text-gray-700 ">
                             <div className="flex gap-2">
@@ -310,7 +310,7 @@ const OwnedPriorities = () => {
                         </div>
                         <div className="px-4 py-6 flex gap-[280px] sm:px-0">
                           <dt className="font-semibold leading-6 text-gray-900">
-                            Goal
+                            Goal:
                           </dt>
                           <dd className="mt-1 leading-6 text-gray-500 ">
                             {
@@ -321,15 +321,15 @@ const OwnedPriorities = () => {
                         </div>
                         <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-24 sm:px-0">
                           <dt className="font-semibold leading-6 text-gray-900">
-                            What's happening with the Brand?
+                            What's happening with the Brand:
                           </dt>
                           <dd className="mt-1 leading-6 text-gray-500 ">
-                            Launch
+                            Launch:
                           </dd>
                         </div>
                         <div className="px-4 py-6 flex gap-[270px] sm:px-0">
                           <dt className="font-semibold leading-6 text-gray-900">
-                            When
+                            When:
                           </dt>
                           <dd className="mt-1 leading-6 text-gray-500 ">
                             {
@@ -340,7 +340,7 @@ const OwnedPriorities = () => {
                         </div>
                         <div className="px-4 py-6 flex gap-[230px] sm:px-0">
                           <dt className="font-semibold leading-6 text-gray-900">
-                            Description
+                            Description:
                           </dt>
                           <dd className="mt-1 leading-6 text-gray-500  ">
                             {
