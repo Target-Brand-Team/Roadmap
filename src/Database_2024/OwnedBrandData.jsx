@@ -1,5 +1,5 @@
-import auden from "../assets/AUDEN_110x110_TEST.png";
-import shadeShore from "../assets/SHADEandSHORE_110x110_TEST.png";
+import auden from "../assets/newAuden.png";
+import shadeShore from "../assets/newShade.png";
 import starsAbove from "../assets/stars.png";
 import UpUp from "../assets/up_up.png";
 import smart from "../assets/Smartly_Round.png";

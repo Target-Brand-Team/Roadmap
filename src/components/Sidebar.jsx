@@ -6,7 +6,7 @@ import { IoChevronBackCircleSharp } from "react-icons/io5";
 import { IoChevronForwardCircleSharp } from "react-icons/io5";
 import { RxDoubleArrowRight } from "react-icons/rx";
 import { RxDoubleArrowLeft } from "react-icons/rx";
-import newLogo from '../assets/PRT_Logo_Tall.png'
+import newLogo from '../assets/newLogo.png'
 
 
 const Sidebar = () => {
