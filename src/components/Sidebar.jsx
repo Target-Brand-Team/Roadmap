@@ -6,6 +6,8 @@ import { IoChevronBackCircleSharp } from "react-icons/io5";
 import { IoChevronForwardCircleSharp } from "react-icons/io5";
 import { RxDoubleArrowRight } from "react-icons/rx";
 import { RxDoubleArrowLeft } from "react-icons/rx";
+import newLogo from '../assets/PRT_Logo_Tall.png'
+
 
 const Sidebar = () => {
   const [hideSidebar, setHideSidebar] = useState(true);
@@ -15,7 +17,7 @@ const Sidebar = () => {
       {hideSidebar ? (
         <div className="bg-white h-screen w-32 p- flex flex-col border-r border-l border-teal-400 text-black relative">
           <div className=" mb-16 mt-16">
-            <img src={Logo} className="w-[110px] ml-1" />
+            <img src={newLogo} className="w-[110px] ml-1" />
           </div>
 
           <span className="divider"></span>

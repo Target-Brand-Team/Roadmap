@@ -6,6 +6,10 @@ import { IoBarChart } from "react-icons/io5";
 import { HiOutlineAnnotation } from "react-icons/hi";
 import { HiChevronDoubleDown } from "react-icons/hi2";
 import { HiChevronDoubleUp } from "react-icons/hi2";
+import { HiChevronDown } from "react-icons/hi2";
+import { HiChevronUp } from "react-icons/hi2";
+import { FiPlus } from "react-icons/fi";
+import { FiMinus } from "react-icons/fi";
 
 const DashboardGrid = ({
   showCultural,
@@ -67,11 +71,11 @@ const DashboardGrid = ({
 
         {show ? (
           <div className="h-full w-9 pl-3 ml-12 text-xl flex justify-center items-start ">
-            <HiChevronDoubleUp className="text-[#28354e]" />
+            <HiChevronUp className="text-[#28354e]" />
           </div>
         ) : (
           <div className="h-full w-9 pl-3 ml-12 text-2xl flex justify-center items-start">
-            <HiChevronDoubleDown className="text-[#28354e]" />
+            <HiChevronDown className="text-[#28354e]" />
           </div>
         )}
       </div>
@@ -95,11 +99,11 @@ const DashboardGrid = ({
 
         {showOwned ? (
           <div className="h-full w-9 pl-3 ml-10 text-2xl flex justify-center items-start ">
-            <HiChevronDoubleUp className="text-[#239058]" />
+            <FiPlus className="text-[#239058]" />
           </div>
         ) : (
           <div className="h-full w-9 pl-3 ml-10 text-2xl flex justify-center items-start">
-            <HiChevronDoubleDown className="text-[#239058]" />
+            <FiMinus className="text-[#239058]" />
           </div>
         )}
       </div>
