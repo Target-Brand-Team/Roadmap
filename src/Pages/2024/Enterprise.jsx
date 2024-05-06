@@ -4,6 +4,8 @@ import { useState } from "react";
 import { ENTERPRISE_PRIORITIES } from "../../Database_2024/Enterprise_Priori_Data";
 import OwnedPriorities from "./OwnedPriorities";
 import { IoClose } from "react-icons/io5";
+import { HiChevronDown } from "react-icons/hi2";
+import { HiChevronUp } from "react-icons/hi2";
 
 const Enterprise = () => {
   const [modal, setModal] = useState(false);
@@ -23,22 +25,26 @@ const Enterprise = () => {
         <section className="w-full flex flex-col gap-1">
           {/* ============================== ENTERPRISE TGT === */}
           {tgtToggle ? (
-            <h3
-              className="bg-sky-900 text-white font-thin rounded text-center mb- py-2 cursor-pointer hover:bg-sky-950"
+            <div
+              className="bg-sky-900 flex items-center text-white font-thin rounded mb- py-2 cursor-pointer hover:bg-sky-950"
               onClick={() => setTgtToggle(false)}
             >
-              TGT Forward & Inclusive Initiatives
-            </h3>
+              <HiChevronDown className="ml-6 text-xl" />
+              <h3 className="ml-[380px]">
+                TGT Forward & Inclusive Initiatives
+              </h3>
+            </div>
           ) : (
             <div className="shadow h-[170px] flex relative">
               <span
                 className="vertical text-[13px] text-white bg-sky-900 hover:bg-sky-950 text-center font-semibold p-2 py-3  rounded-tr-md rounded-br-md cursor-pointer group"
                 onClick={() => setTgtToggle(true)}
               >
-                TGT Forward & Inclusive
+                TGT Forward
                 {/* Tootip */}
                 <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 bg-sky-900 text-white rounded shadow-xl absolute top-7 left-1 px-8 py-1 rotate-90 w-48 h-28">
-                  Enterprise Initiatives related to Target's commitments to sustainability and inclusive
+                  Enterprise Initiatives related to Target's commitments to
+                  sustainability and inclusive
                 </span>
               </span>
 
@@ -67,12 +73,13 @@ const Enterprise = () => {
 
           {/* ====================================== ENTERPRISE LTO === */}
           {ltoToggle ? (
-            <h3
-              className="bg-sky-800 text-white font-thin rounded text-center py-2 cursor-pointer hover:bg-sky-950"
+            <div
+              className="bg-sky-800 flex items-center text-white font-thin rounded text-center py-2 cursor-pointer hover:bg-sky-950"
               onClick={() => setLtoToggle(false)}
             >
-              LTO
-            </h3>
+              <HiChevronDown className="ml-6 text-xl" />
+              <h3 className="ml-[470px]">LTO</h3>
+            </div>
           ) : (
             <div className="shadow h-[160px] flex relative ">
               <span
@@ -80,10 +87,10 @@ const Enterprise = () => {
                 onClick={() => setLtoToggle(true)}
               >
                 LTO
-
-                 {/* Tootip */}
-                 <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 bg-sky-800 text-white rounded shadow-xl absolute     left-1 px-8 py-1 rotate-90 w-48 h-28">
-                  LTO (Limited Time Offering) is a Target exclusive and time-based cross-category collection drop
+                {/* Tootip */}
+                <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 bg-sky-800 text-white rounded shadow-xl absolute     left-1 px-8 py-1 rotate-90 w-48 h-28">
+                  LTO (Limited Time Offering) is a Target exclusive and
+                  time-based cross-category collection drop
                 </span>
               </span>
 
@@ -112,22 +119,22 @@ const Enterprise = () => {
 
           {/* =================================== ENTERPRISE STRATEGY === */}
           {strategicToggle ? (
-            <h3
-              className="bg-sky-700 text-white font-thin rounded text-center mb-1 py-2 cursor-pointer hover:bg-sky-950"
+            <div
+              className="bg-sky-700 flex items-center text-white font-thin rounded text-center mb-1 py-2 cursor-pointer hover:bg-sky-950"
               onClick={() => setStrategicToggle(false)}
             >
-              Strategic Partnership
-            </h3>
+              <HiChevronDown className="ml-6 text-xl" />
+              <h3 className="ml-[420px]">Strategic Partnership</h3>
+            </div>
           ) : (
             <div className="shadow h-[160px] flex ">
               <span
                 className="vertical text-[13px] text-white bg-sky-700 hover:bg-sky-950 text-center font-semibold p-2 py-3 rounded-tr-md rounded-br-md cursor-pointer group"
                 onClick={() => setStrategicToggle(true)}
               >
-                Strategic Partnership
-
-                  {/* Tootip */}
-                  <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 bg-sky-700 text-white rounded shadow-xl absolute bottom-2 left-1 px-8 py-5 rotate-90  w-48 h-28">
+                Strategic Partnerships
+                {/* Tootip */}
+                <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 bg-sky-700 text-white rounded shadow-xl absolute bottom-2 left-1 px-8 py-5 rotate-90  w-48 h-28">
                   Strategic Partnership are business partnership initiatives
                 </span>
               </span>

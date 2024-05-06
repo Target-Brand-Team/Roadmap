@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { OWNED_BRAND_DATA } from "../../Database_2024/OwnedBrandData";
 import OwnedBrandRollover from "../../components/Rollover/OwnedBrandRollover";
 import { IoClose } from "react-icons/io5";
-
+import { HiChevronDown } from "react-icons/hi2";
+import { HiChevronUp } from "react-icons/hi2";
 
 const OwnedPriorities = () => {
   const [ownedData, setownedData] = useState(OWNED_BRAND_DATA);
@@ -25,12 +26,13 @@ const OwnedPriorities = () => {
         <section className="w-full flex flex-col gap-1">
           {/* ===================================== PORTFOLIO PRIORITIES */}
           {priorityToggle ? (
-            <h3
-              className="bg-green-900 text-white hover:bg-green-950 text-th font-thin rounded text-center py-2 cursor-pointer"
+            <div
+              className="bg-green-900 flex items-center text-white hover:bg-green-950 text-th font-thin rounded text-center py-2 cursor-pointer"
               onClick={() => setPriorityToggle(false)}
             >
-              Portfolio Priorities
-            </h3>
+              <HiChevronDown className="ml-6 text-xl" />
+              <h3 className="ml-[420px]">Portfolio Priorities</h3>
+            </div>
           ) : (
             <div className="shadow h-48 flex flex-wrap relative">
               <span
@@ -57,12 +59,13 @@ const OwnedPriorities = () => {
 
           {/* ===================================== ACCESSORIES & APPAREL */}
           {accessoriesToggle ? (
-            <h3
-              className="bg-green-800 text-white hover:bg-green-950 text-th font-thin rounded text-center py-2 cursor-pointer"
+            <div
+              className="bg-green-800 flex items-center text-white hover:bg-green-950 text-th font-thin rounded text-center py-2 cursor-pointer"
               onClick={() => setAccessoriesToggle(false)}
             >
-              Accessories & Apparel
-            </h3>
+              <HiChevronDown className="ml-6 text-xl" />
+              <h3 className="ml-[410px]">Accessories & Apparel</h3>
+            </div>
           ) : (
             <div className="shadow h-48 flex flex-wrap relative">
               <span
@@ -97,12 +100,13 @@ const OwnedPriorities = () => {
 
           {/* ======================================== ESSENTIALS & BEAUTY */}
           {essentialToggle ? (
-            <h3
-              className="bg-green-700 text-white hover:bg-green-950 text-th font-thin rounded text-center py-2 cursor-pointer"
+            <div
+              className="bg-green-700 flex items-center text-white hover:bg-green-950 text-th font-thin rounded text-center py-2 cursor-pointer"
               onClick={() => setEssentialToggle(false)}
             >
-              Essentials & Beauty
-            </h3>
+              <HiChevronDown className="ml-6 text-xl" />
+              <h3 className="ml-[420px]">Essentials & Beauty</h3>
+            </div>
           ) : (
             <div className="shadow h-48 flex flex-wrap relative">
               <span
@@ -137,12 +141,13 @@ const OwnedPriorities = () => {
 
           {/* ============================ FOOD & BEVERAGE */}
           {foodToggle ? (
-            <h3
-              className="bg-green-600 text-white hover:bg-green-950 text-th font-thin rounded text-center py-2 cursor-pointer"
+            <div
+              className="bg-green-600 flex items-center text-white hover:bg-green-950 text-th font-thin rounded text-center py-2 cursor-pointer"
               onClick={() => setFoodToggle(false)}
             >
-              Food & Beverage
-            </h3>
+              <HiChevronDown className="ml-6 text-xl" />
+              <h3 className="ml-[425px]">Food & Beverage</h3>
+            </div>
           ) : (
             <div className="shadow h-48 flex flex-wrap relative">
               <span
@@ -177,12 +182,13 @@ const OwnedPriorities = () => {
 
           {/* ================================= HARDLINES */}
           {hardlinesToggle ? (
-            <h3
-              className="bg-green-500 text-white hover:bg-green-950 text-th font-thin rounded text-center py-2 cursor-pointer"
+            <div
+              className="bg-green-500 flex items-center text-white hover:bg-green-950 text-th font-thin rounded text-center py-2 cursor-pointer"
               onClick={() => setHardlinesToggle(false)}
             >
-              Hardlines
-            </h3>
+              <HiChevronDown className="ml-6 text-xl" />
+              <h3 className="ml-[450px]">Hardlines</h3>
+            </div>
           ) : (
             <div className="shadow h-48 flex flex-wrap relative">
               <span
@@ -217,16 +223,21 @@ const OwnedPriorities = () => {
 
           {/* ======================================= HOME */}
           {homeToggle ? (
-            <h3
-              className="bg-green-400 text-white hover:bg-green-950 text-th font-thin rounded text-center py-2 cursor-pointer"
-              onClick={() => setHomeToggle(false)}
+            <div className="bg-green-400 flex items-center text-white hover:bg-green-950 text-th font-thin rounded text-center py-2 cursor-pointer"
+            onClick={() => setHomeToggle(false)}>
+              <HiChevronDown className="ml-6 text-xl" />
+            <h3 className="ml-[460px]"
+             
             >
               Home
             </h3>
+            </div>
           ) : (
             <div className="shadow h-64 flex flex-wrap relative">
-              <span className="vertical text-[13px] text-white bg-green-400 text-center font-semibold p-2 hover:bg-green-950 cursor-pointer rounded-tr-md rounded-br-md" 
-              onClick={() => setHomeToggle(true)}>
+              <span
+                className="vertical text-[13px] text-white bg-green-400 text-center font-semibold p-2 hover:bg-green-950 cursor-pointer rounded-tr-md rounded-br-md"
+                onClick={() => setHomeToggle(true)}
+              >
                 Home
               </span>
               {ownedData?.HOME?.map((item, index) => (

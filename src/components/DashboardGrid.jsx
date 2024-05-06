@@ -1,15 +1,10 @@
 import React from "react";
 import { IoBagHandle, IoCartSharp } from "react-icons/io5";
-import { IoCashOutline } from "react-icons/io5";
-import { IoPeopleSharp } from "react-icons/io5";
 import { IoBarChart } from "react-icons/io5";
 import { HiOutlineAnnotation } from "react-icons/hi";
-import { HiChevronDoubleDown } from "react-icons/hi2";
-import { HiChevronDoubleUp } from "react-icons/hi2";
 import { HiChevronDown } from "react-icons/hi2";
 import { HiChevronUp } from "react-icons/hi2";
-import { FiPlus } from "react-icons/fi";
-import { FiMinus } from "react-icons/fi";
+
 
 const DashboardGrid = ({
   showCultural,
@@ -23,41 +18,41 @@ const DashboardGrid = ({
     <div className="flex gap-1 mt-[-5px] ">
       <div
         onClick={() => setShowCultural(!showCultural)}
-        className="bg-white hover:bg-yellow-100 cursor-pointer rounded p-1 py-3 flex-1 border border-gray-200 flex items-center"
+        className="relative bg-white hover:bg-yellow-100 cursor-pointer rounded p-1 py-3 flex-1 border border-gray-200 flex items-center"
       >
         <div className="bg-[#ffad00] rounded-full h-12 w-12 flex items-center justify-center">
           <IoBagHandle className="text-2xl text-white" />
         </div>
-        <div className="pl-2">
+        <div className="pl-2 w-[250px]">
           <div className="flex items-center">
             <strong className="text-lg text-[#ffad00] font-semibold">
-              Culture Context
+              Blg Picture Context
             </strong>
           </div>
           <span className="text-[12px]  text-gray-700">
-            Key Cultural - Commercial Moments
+            Key Cultural & Commercial Moments
           </span>
         </div>
 
         {showCultural ? (
-          <div className="h-full w-6 ml-12 text-2xl flex justify-center items-start   ">
-            <HiChevronDoubleUp className="text-[#ffad00]" />
+          <div className="h-full w-6 absolute left-[300px] top-1 text-2xl flex justify-center items-start   ">
+            <HiChevronUp className="text-[#ffad00]" />
           </div>
         ) : (
-          <div className="h-full w-6 ml-12 text-2xl flex justify-center items-start">
-            <HiChevronDoubleDown className="text-[#ffad00]" />
+          <div className="h-full w-6 absolute left-[300px] top-1 text-2xl flex justify-center items-start">
+            <HiChevronDown className="text-[#ffad00]" />
           </div>
         )}
       </div>
 
       <div
         onClick={() => setShow(!show)}
-        className="bg-white hover:bg-sky-100 cursor-pointer rounded p-1 py-3 flex-1 border border-gray-200 flex items-center"
+        className="relative bg-white hover:bg-sky-100 cursor-pointer rounded p-1 py-3 flex-1 border border-gray-200 flex items-center"
       >
         <div className="bg-[#28354e] rounded-full h-12 w-12 flex items-center justify-center">
           <IoBarChart className="text-2xl text-white" />
         </div>
-        <div className="pl-2">
+        <div className="p-2 w-[250px]">
           {/* <span className="text-sm text-gray-500 font-light">Total Sales</span> */}
           <div className="flex items-center ">
             <strong className="text-lg text-[#28354e] font-semibold">
@@ -65,16 +60,16 @@ const DashboardGrid = ({
             </strong>
           </div>
           <span className="text-[12px]  text-gray-700">
-            TGT Forward & Inclusive Initiatives
+            TGT Forward, LTO & Strategic Partnerships
           </span>
         </div>
 
         {show ? (
-          <div className="h-full w-9 pl-3 ml-12 text-xl flex justify-center items-start ">
+          <div className="h-full w-9 pl-3 absolute left-[300px] top-1 text-2xl flex justify-center items-start ">
             <HiChevronUp className="text-[#28354e]" />
           </div>
         ) : (
-          <div className="h-full w-9 pl-3 ml-12 text-2xl flex justify-center items-start">
+          <div className="h-full w-9 pl-3 absolute left-[300px] top-1 text-2xl flex justify-center items-start">
             <HiChevronDown className="text-[#28354e]" />
           </div>
         )}
@@ -87,23 +82,23 @@ const DashboardGrid = ({
         <div className="bg-[#239058] rounded-full h-12 w-12 flex items-center justify-center">
           <HiOutlineAnnotation className="text-2xl text-white" />
         </div>
-        <div className="pl-2">
+        <div className="relative pl-2 w-[250px]">
           {/* <span className="text-sm text-gray-500 font-light">Total Sales</span> */}
           <div className="flex items-center">
             <strong className="text-lg text-[#239058] font-semibold">
               Owned Brand Priorities
             </strong>
           </div>
-          <span className="text-[12px]  text-gray-700">Pyramid(s)</span>
+          <span className="text-[12px]  text-gray-700">Initiative by Pyramid</span>
         </div>
 
         {showOwned ? (
-          <div className="h-full w-9 pl-3 ml-10 text-2xl flex justify-center items-start ">
-            <FiPlus className="text-[#239058]" />
+          <div className="h-full w-9 pl-3 mt-[-15px]  text-2xl flex justify-center items-start ">
+            <HiChevronUp className="text-[#239058]" />
           </div>
         ) : (
-          <div className="h-full w-9 pl-3 ml-10 text-2xl flex justify-center items-start">
-            <FiMinus className="text-[#239058]" />
+          <div className="h-full w-9 pl-3 mt-[-15px] text-2xl flex justify-center items-start">
+            <HiChevronDown className="text-[#239058]" />
           </div>
         )}
       </div>
