@@ -60,7 +60,7 @@ const DashboardGrid = ({
             </strong>
           </div>
           <span className="text-[12px]  text-gray-700">
-            TGT Forward, LTO & Strategic Partnerships
+            TGT Forward, LTOs & Strategic Partnerships
           </span>
         </div>
 
@@ -89,7 +89,7 @@ const DashboardGrid = ({
               Owned Brand Priorities
             </strong>
           </div>
-          <span className="text-[12px]  text-gray-700">Initiative by Pyramid</span>
+          <span className="text-[12px]  text-gray-700">Initiatives by Pyramid</span>
         </div>
 
         {showOwned ? (
