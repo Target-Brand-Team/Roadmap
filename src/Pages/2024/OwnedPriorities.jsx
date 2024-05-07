@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { OWNED_BRAND_DATA } from "../../Database_2024/OwnedBrandData";
+import { OWNED_BRAND_DATA } from "../../Database_2024/2024/OwnedBrandData";
 import OwnedBrandRollover from "../../components/Rollover/OwnedBrandRollover";
 import { IoClose } from "react-icons/io5";
 import { HiChevronDown } from "react-icons/hi2";
@@ -304,7 +304,7 @@ const OwnedPriorities = () => {
                           </span>
                           <dd className="mt-1 leading-6 text-gray-700 ">
                             <div className="flex gap-2">
-                              <span className="font-semibold">Primary: </span>
+                              <span className="font-semibold ml-2">Primary: </span>
                               {
                                 ownedData[ownedVariable][dataIndexOwnedBrand]
                                   ?.pyramid?.primary
@@ -334,8 +334,11 @@ const OwnedPriorities = () => {
                           <dt className="font-semibold leading-6 text-gray-900">
                             What's happening with the Brand:
                           </dt>
-                          <dd className="mt-1 leading-6 text-gray-500 ">
-                            Launch:
+                          <dd className="mt-1 ml-2 leading-6 text-gray-500 ">
+                          {
+                              ownedData[ownedVariable][dataIndexOwnedBrand]
+                                ?.what_happen
+                            }
                           </dd>
                         </div>
                         <div className="px-4 py-6 flex gap-[270px] sm:px-0">

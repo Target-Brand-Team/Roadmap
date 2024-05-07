@@ -5,7 +5,6 @@ import { HiOutlineAnnotation } from "react-icons/hi";
 import { HiChevronDown } from "react-icons/hi2";
 import { HiChevronUp } from "react-icons/hi2";
 
-
 const DashboardGrid = ({
   showCultural,
   setShow,
@@ -26,7 +25,7 @@ const DashboardGrid = ({
         <div className="pl-2 w-[250px]">
           <div className="flex items-center">
             <strong className="text-lg text-[#ffad00] font-semibold">
-              Blg Picture Context
+              Big Picture Context
             </strong>
           </div>
           <span className="text-[12px]  text-gray-700">
@@ -35,12 +34,22 @@ const DashboardGrid = ({
         </div>
 
         {showCultural ? (
-          <div className="h-full w-6 absolute left-[300px] top-1 text-2xl flex justify-center items-start   ">
-            <HiChevronUp className="text-[#ffad00]" />
+          <div className="h-full w-6 text-2xl flex justify-center items-start group ">
+            <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 text-[14px] text-center text-gray-600 rounded shadow-xl p-1 w-16 h-8 absolute right-1 top-[-20px] bg-white ">
+              Close
+            </span>
+            <div>
+              <HiChevronUp className="absolute right-2 text-[#ffad00] z-10" />
+            </div>
           </div>
         ) : (
-          <div className="h-full w-6 absolute left-[300px] top-1 text-2xl flex justify-center items-start">
-            <HiChevronDown className="text-[#ffad00]" />
+          <div className="h-full w-6 text-2xl flex justify-center items-start group">
+             <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 text-[14px] text-center text-gray-600 rounded shadow-xl p-1 w-16 h-8 absolute right-1 top-[-20px] bg-white ">
+              Open
+            </span>
+            <div>
+              <HiChevronDown className="absolute right-2 text-[#ffad00] z-10" />
+            </div>
           </div>
         )}
       </div>
@@ -65,12 +74,22 @@ const DashboardGrid = ({
         </div>
 
         {show ? (
-          <div className="h-full w-9 pl-3 absolute left-[300px] top-1 text-2xl flex justify-center items-start ">
-            <HiChevronUp className="text-[#28354e]" />
+          <div className="h-full w-9 pl-3 text-2xl flex justify-center items-start group">
+             <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 text-[14px] text-center text-gray-600 rounded shadow-xl p-1 w-16 h-8 absolute right-1 top-[-20px] bg-white ">
+              Close
+            </span>
+            <div>
+              <HiChevronUp className="absolute right-2 text-[#28354e] z-10" />
+            </div>
           </div>
         ) : (
-          <div className="h-full w-9 pl-3 absolute left-[300px] top-1 text-2xl flex justify-center items-start">
-            <HiChevronDown className="text-[#28354e]" />
+          <div className="h-full w-9 pl-3 text-2xl flex justify-center items-start group">
+            <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 text-[14px] text-center text-gray-600 rounded shadow-xl p-1 w-16 h-8 absolute right-1 top-[-20px] bg-white ">
+              Open
+            </span>
+            <div>
+              <HiChevronDown className="absolute right-2 text-[#28354e] z-10" />
+            </div>
           </div>
         )}
       </div>
@@ -89,16 +108,28 @@ const DashboardGrid = ({
               Owned Brand Priorities
             </strong>
           </div>
-          <span className="text-[12px]  text-gray-700">Initiatives by Pyramid</span>
+          <span className="text-[12px]  text-gray-700">
+            Initiatives by Pyramid
+          </span>
         </div>
 
         {showOwned ? (
-          <div className="h-full w-9 pl-3 mt-[-15px]  text-2xl flex justify-center items-start ">
-            <HiChevronUp className="text-[#239058]" />
+          <div className="h-full w-9 pl-3 text-2xl flex justify-center items-start group">
+             <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 text-[14px] text-center text-gray-600 rounded shadow-xl p-1 w-16 h-8 absolute top-6 right-2 bg-white ">
+              Close
+            </span>
+            <div>
+              <HiChevronUp className="absolute right-4 text-[#239058] z-10" />
+            </div>
           </div>
         ) : (
-          <div className="h-full w-9 pl-3 mt-[-15px] text-2xl flex justify-center items-start">
-            <HiChevronDown className="text-[#239058]" />
+          <div className="h-full w-9 pl-3 mt-[-15px] text-2xl flex justify-center items-start group">
+           <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 text-[14px] text-center text-gray-600 rounded shadow-xl p-1 w-16 h-8 absolute top-6 right-2 bg-white ">
+              Open
+            </span>
+            <div>
+              <HiChevronDown className="absolute top-14 right-4 text-[#239058] z-10" />
+            </div>
           </div>
         )}
       </div>

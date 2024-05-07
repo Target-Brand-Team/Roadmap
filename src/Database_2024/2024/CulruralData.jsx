@@ -5,7 +5,7 @@ export const CULTURAL_CONTEXT_LINKS =
 		FEBRUARY: [
 			{
 				key: 'feb01',
-				label: 'Black History',
+				label: 'Black History Month',
 			},
 			{
 				key: 'feb02',
@@ -18,7 +18,7 @@ export const CULTURAL_CONTEXT_LINKS =
 			{
 				key: 'feb04',
 				label: "President's Day",
-			}
+			},
 		],
 
 		MARCH: [
@@ -39,7 +39,7 @@ export const CULTURAL_CONTEXT_LINKS =
 		APRIL: [
 			{
 				key: 'april01',
-				label: 'Earth Day',
+				label: 'Earth Day /Month',
 			},
 			{
 				key: 'april02',
@@ -50,7 +50,7 @@ export const CULTURAL_CONTEXT_LINKS =
 		MAY: [
 			{
 				key: 'may01',
-				label: 'AAPI Heritage',
+				label: 'AAPI Heritage Month',
 			},
 			{
 				key: 'may02',
@@ -69,7 +69,7 @@ export const CULTURAL_CONTEXT_LINKS =
 		JUNE: [
 			{
 				key: 'june01',
-				label: 'Pride',
+				label: 'Pride Month',
 			},
 			{
 				key: 'june02',
@@ -95,10 +95,14 @@ export const CULTURAL_CONTEXT_LINKS =
 		AUGUST: [
 			{
 				key: 'aug01',
-				label: 'Black Business',
+				label: 'BTS/BTC',
 			},
 			{
 				key: 'aug02',
+				label: 'Black Business Month',
+			},
+			{
+				key: 'aug03',
 				label: 'Labor Day',
 			},
 		],
@@ -110,7 +114,7 @@ export const CULTURAL_CONTEXT_LINKS =
 			},
 			{
 				key: 'sept02',
-				label: 'Hispanic Heritage',
+				label: 'Hispanic Heritage Month',
 			},
 		],
 
@@ -121,7 +125,7 @@ export const CULTURAL_CONTEXT_LINKS =
 			},
 			{
 				key: 'oct02',
-				label: 'Hallowen',
+				label: 'Hween / Dia de los Muertos',
 			},
 			{
 				key: 'oct03',
@@ -158,11 +162,15 @@ export const CULTURAL_CONTEXT_LINKS =
 		JANUARY: [
 			{
 				key: 'jan01',
-				label: 'New years ',
+				label: 'New Year ',
 			},
 			{
 				key: 'jan02',
 				label: 'MLK Day',
+			},
+			{
+				key: 'jan03',
+				label: 'Award Season',
 			},
 			
 		],

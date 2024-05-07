@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import DashboardGrid from '../../components/DashboardGrid'
 import Calendar from '../../components/Calendar'
+import Cultural2025 from './Cultural2025';
+import Enterprise2025 from "./Enterprise2025";
+import Owned2025 from "./Owned2025";
 
 const Dashboard2025 = () => {
   const [show, setShow] = useState(true);
@@ -12,9 +15,21 @@ const Dashboard2025 = () => {
       <div className="bg-red-700 text-white rounded-sm py-1 px-3 font-bold text-lg flex justify-center">
         2025
       </div>
-      <DashboardGrid />
+      <DashboardGrid 
+       showCultural={showCultural}
+       setShow={setShow}
+       setShowCultural={setShowCultural}
+       show={show}
+       showOwned={showOwned}
+       setShowOwned={setShowOwned}/>
 
       <Calendar />
+
+      {showCultural ? <Cultural2025 /> : null}
+      
+      {show ? <Enterprise2025 /> : null}
+
+      {showOwned ? <Owned2025 /> : null}
     </div>
   )
 }

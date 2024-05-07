@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../assets/Logo.png";
 import { Link, useLocation } from "react-router-dom";
-import { DASHBOARD_SIDEBAR_LINKS } from "../Database_2024/Navigation";
+import { DASHBOARD_SIDEBAR_LINKS } from "../Database_2024/2024/Navigation";
 import { IoChevronBackCircleSharp } from "react-icons/io5";
 import { IoChevronForwardCircleSharp } from "react-icons/io5";
 import { RxDoubleArrowRight } from "react-icons/rx";
