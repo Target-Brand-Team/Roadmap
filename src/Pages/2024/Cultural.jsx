@@ -5,7 +5,7 @@ const Cultural = () => {
   return (
     <div className=" flex">
       <div className="bg-targetYellow vertical rounded-tr-md rounded-br-md p-1 gap-2 text-center font-semibold text-gray-700 border border-gray-200 flex justify-center items-center w-9">
-        Key Cultural
+        Context
       </div>
 
       {/* ====   FIRST QUATER Q1  ==== */}

@@ -43,9 +43,9 @@ export const OWNED_BRAND_DATA_2025 = {
       image: goodfellow,
       pyramid: {
         primary: "A&A",
-        secondary: "E&B",
+        secondary: "Everyday Care",
       },
-      goal: "Renovate E&B packaging to provide a consistent, cohesive guest experience.",
+      goal: "Renovate Everyday Care packaging to provide a consistent, cohesive guest experience.",
       what_happen: "Grow & Maintain",
       description:
         "Evolved packaging will establish clear communication and improve guest navigation across different product types.",
@@ -61,8 +61,8 @@ export const OWNED_BRAND_DATA_2025 = {
       label: "Shade & Shore",
       image: shadeShore,
       pyramid: {
-        primary: "N/A",
-        secondary: "E&B",
+        primary: "A&A",
+        secondary: "N/A",
       },
       goal: "Establish Shade & Shore as the flagship brand for Women's Swim through a repositioning that modernizes the entire brand proposition to appeal to an expanded guest base.",
       what_happen: "Reposition",
@@ -102,7 +102,7 @@ export const OWNED_BRAND_DATA_2025 = {
       label: "Boots & Barkley",
       image: boots,
       pyramid: {
-        primary: "E&B",
+        primary: "Everyday Care",
         secondary: "N/A",
       },
       goal: "Grow Supers & Steadies who love and treat their pets as family to choose Target over both transactional and premium-priced competitors as their discovery destination",
@@ -150,7 +150,7 @@ export const OWNED_BRAND_DATA_2025 = {
       goal: "G&G LTO to build credibility, drive awareness and differentiation while giving guests 'more to celebrate' and create access to innovative flavors, recipes & wholesome ingredients at affordable prices while exploring new categories.",
       what_happen: "Grow & Maintain",
       description:
-        "Good & Gather is teaming up with innovative tastemakers to help guests explore new and exciting flavors.  The first partnership will include 4 frozen pizzas and 3 frozen appetizers, in store.  Following this LTO, 2 (TBD) pizza items will move permanently inline.",
+        "Good & Gather is teaming up with innovative tastemakers to help guests explore new and exciting flavors.  The second partnership will BBQ focused,featring items like corn bread & hushpuppy mix, BBQ sauce, Sweet Tea, Pork Rinds & more.",
       when: "LTO Sets in June '25 ",
     },
     {
@@ -166,10 +166,10 @@ export const OWNED_BRAND_DATA_2025 = {
         primary: "F&B",
         secondary: "N/A",
       },
-      goal: "G&G LTO to build credibility, drive awareness and differentiation while giving guests 'more to celebrate' and create access to innovative flavors, recipes & wholesome ingredients at affordable prices while exploring new categories.",
+      goal: "Differentiate G&G Seasonal offering by create a distinct seasonal expression from core inline & competition, helping guests discover and celebrate seasonal flavors.",
       what_happen: "Grow & Maintain",
       description:
-        "Good & Gather is teaming up with innovative tastemakers to help guests explore new and exciting flavors.  The first partnership will include 4 frozen pizzas and 3 frozen appetizers, in store.  Following this LTO, 2 (TBD) pizza items will move permanently inline.",
+        "Categories will include:  Dry Grocery (Coffee, Dips, Seasonings, Spices Pasta Shapes, Granola, Teas, Oils, Hot Cocoa, Sparkling Water, Chips , Pretzels, Popcorn, Oatmeal, Bars) Produce/Deli (Deli Sides, Charcuterie Boards, Salad Kits/Bowls) Dairy (Non-dairy nogs, Organic Dairy Nog, Non-dairy creamers, RTD Cold Brew Coffee, Cream Cheese)",
       when: "First Set for Harvest '25 - Additional Sets include Holiday '25, & Summer '26",
     },
     {
@@ -226,70 +226,71 @@ export const OWNED_BRAND_DATA_2025 = {
       goal: "Launching new kid focused items in Stationary to provide ease and excitement, add to celebratory moments for the guest and drive additional awareness for Favorite Day.",
       what_happen: "Grow & Maintain",
       description:
-        "Product Include:Happy Birthday cookie decorating kit, Cupcake ring pops, Dinosaur gummies, mermaid bracelets, and shark sour gummies will be launched in FD setting in Stationary to complement the Spritz kid's party favors",
+        "Product Include: Happy Birthday cookie decorating kit, Cupcake ring pops, Dinosaur gummies, mermaid bracelets, and shark sour gummies will be launched in FD setting in Stationary to complement the Spritz kid's party favors",
       when: "Launches in March '25",
     },
   ],
 
-  HARDLINES: [
-    {
-      id: 1,
-      key: "01",
-      width: 585,
-      left: 40,
-      top: 15,
-      color: "#9ca3af",
-      label: "Giggle Scape",
-      image: giggleScape,
-      pyramid: {
-        primary: "Hardlines",
-        secondary: "N/A",
-      },
-      goal: "New Toy Brand designed to amplify our already strong Toy momentum with an irresistible selection of books, toys and games throughout 2024.",
-      what_happen: "Launch",
-      description:
-        "Gigglescape was designed to focus on curiosity, learning & development and created with both kids and parents in mind.",
-      when: "First Launch Jan '24 - Final Launch August '24",
-    },
-    {
-      id: 2,
-      key: "02",
-      width: 100,
-      left: 945,
-      top: 15,
-      color: "#9ca3af",
-      label: "Giggle Scape",
-      image: giggleScape,
-      pyramid: {
-        primary: "F&B",
-        secondary: "N/A",
-      },
-      goal: "New Toy Brand designed to amplify our already strong Toy momentum with an irresistible selection of books, toys and games throughout 2024.",
-      what_happen: "Launch",
-      description:
-        "Gigglescape was designed to focus on curiosity, learning & development and created with both kids and parents in mind.",
-      when: "First Launch Jan '24 - Final Launch August '24",
-    },
-    {
-      id: 3,
-      key: "03",
-      width: 245,
-      left: 40,
-      top: 70,
-      color: "#9ca3af",
-      label: "Embark",
-      image: embark,
-      pyramid: {
-        primary: "F&B",
-        secondary: "N/A",
-      },
-      goal: "Shifting  from a narrowly focused camping brand to an inclusive outdoor adventure brand.",
-      what_happen: "Reposition",
-      description:
-        "Expands assortment by 78% over the next year across Travel, Outdoor Recreation, and Hydration departments.",
-      when: "First wave launch in Feb '24' - Final Launch FY Q1 '25",
-    },
-  ],
+  // HARDLINES: [
+  //   {
+  //     id: 1,
+  //     key: "01",
+  //     width: 585,
+  //     left: 40,
+  //     top: 15,
+  //     color: "#9ca3af",
+  //     label: "Giggle Scape",
+  //     image: giggleScape,
+  //     pyramid: {
+  //       primary: "Hardlines",
+  //       secondary: "N/A",
+  //     },
+  //     goal: "New Toy Brand designed to amplify our already strong Toy momentum with an irresistible selection of books, toys and games throughout 2024.",
+  //     what_happen: "Launch",
+  //     description:
+  //       "Gigglescape was designed to focus on curiosity, learning & development and created with both kids and parents in mind.",
+  //     when: "First Launch Jan '24 - Final Launch August '24",
+  //   },
+  //   {
+  //     id: 2,
+  //     key: "02",
+  //     width: 100,
+  //     left: 945,
+  //     top: 15,
+  //     color: "#9ca3af",
+  //     label: "Giggle Scape",
+  //     image: giggleScape,
+  //     pyramid: {
+  //       primary: "F&B",
+  //       secondary: "N/A",
+  //     },
+  //     goal: "New Toy Brand designed to amplify our already strong Toy momentum with an irresistible selection of books, toys and games throughout 2024.",
+  //     what_happen: "Launch",
+  //     description:
+  //       "Gigglescape was designed to focus on curiosity, learning & development and created with both kids and parents in mind.",
+  //     when: "First Launch Jan '24 - Final Launch August '24",
+  //   },
+  //   {
+  //     id: 3,
+  //     key: "03",
+  //     width: 245,
+  //     left: 40,
+  //     top: 70,
+  //     color: "#9ca3af",
+  //     label: "Embark",
+  //     image: embark,
+  //     pyramid: {
+  //       primary: "F&B",
+  //       secondary: "N/A",
+  //     },
+  //     goal: "Shifting  from a narrowly focused camping brand to an inclusive outdoor adventure brand.",
+  //     what_happen: "Reposition",
+  //     description:
+  //       "Expands assortment by 78% over the next year across Travel, Outdoor Recreation, and Hydration departments.",
+  //     when: "First wave launch in Feb '24' - Final Launch FY Q1 '25",
+  //   },
+  // ],
+
 
   HOME: [
     {

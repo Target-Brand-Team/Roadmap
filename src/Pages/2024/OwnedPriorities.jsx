@@ -298,7 +298,7 @@ const OwnedPriorities = () => {
                     </div>
                     <div className="mt-5 border-t border-gray-100">
                       <dl className="divide-y divide-gray-100">
-                        <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-24 sm:px-0">
+                        <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-24 sm:px-0">
                           <span className=" font-semibold leading-6 text-gray-900">
                             Pyramids:
                           </span>
@@ -319,7 +319,7 @@ const OwnedPriorities = () => {
                             </div>
                           </dd>
                         </div>
-                        <div className="px-4 py-6 flex gap-[280px] sm:px-0">
+                        <div className="px-4 py-5 flex gap-[280px] sm:px-0">
                           <dt className="font-semibold leading-6 text-gray-900">
                             Goal:
                           </dt>
@@ -330,7 +330,7 @@ const OwnedPriorities = () => {
                             }
                           </dd>
                         </div>
-                        <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-24 sm:px-0">
+                        <div className="px-4 py-2 sm:grid sm:grid-cols-3 sm:gap-24 sm:px-0">
                           <dt className="font-semibold leading-6 text-gray-900">
                             What's happening with the Brand:
                           </dt>
@@ -341,7 +341,7 @@ const OwnedPriorities = () => {
                             }
                           </dd>
                         </div>
-                        <div className="px-4 py-6 flex gap-[270px] sm:px-0">
+                        <div className="px-4 py-4 flex gap-[270px] sm:px-0">
                           <dt className="font-semibold leading-6 text-gray-900">
                             When:
                           </dt>
@@ -352,7 +352,7 @@ const OwnedPriorities = () => {
                             }
                           </dd>
                         </div>
-                        <div className="px-4 py-6 flex gap-[230px] sm:px-0">
+                        <div className="px-4 py-3 flex gap-[230px] sm:px-0">
                           <dt className="font-semibold leading-6 text-gray-900">
                             Description:
                           </dt>

@@ -54,7 +54,7 @@ export const CULTURAL_CONTEXT_LINKS =
 			},
 			{
 				key: 'may02',
-				label: 'Cinco de mayo',
+				label: 'Cinco de Mayo',
 			},
 			{
 				key: 'may03',
@@ -144,7 +144,7 @@ export const CULTURAL_CONTEXT_LINKS =
 			},
 			{
 				key: 'nov03',
-				label: 'Black Friday  Cybermonday',
+				label: 'Black Friday / Cyber Monday',
 			},
 		],
 

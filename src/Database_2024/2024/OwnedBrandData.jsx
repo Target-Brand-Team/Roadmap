@@ -100,7 +100,7 @@ export const OWNED_BRAND_DATA = {
       label: "dealworthy",
       image: dealworthy,
       pyramid: {
-        primary: "E&B",
+        primary: "Everyday Care",
         secondary: "A&A Home Hardlines",
       },
       goal: "Provide a consistent OPP offering to meet guest need, engage with lesser engaged guests and improve Target's price perception",
@@ -116,16 +116,16 @@ export const OWNED_BRAND_DATA = {
       left: 40,
       top: 65,
       color: "#9ca3af",
-      label: "Up & Up",
+      label: "up & up",
       image: UpUp,
       pyramid: {
-        primary: "E&B",
+        primary: "Everyday Care",
         secondary: "Hardlines",
       },
       goal: "Drive ease by simplifying our guest's ability to take care of themselves and their families in every stage of life.",
       what_happen: "Reposition",
       description:
-        "Up&up repositioning and expansion includes a reformulation of 40% of existing products to meet new, higher quality standards and added hundreds of new products like pet items and food storage, with most under $15, designed with and for our guests.",
+        "up&up repositioning and expansion includes a reformulation of 40% of existing products to meet new, higher quality standards and added hundreds of new products like pet items and food storage, with most under $15, designed with and for our guests.",
       when: "First wave launch in Feb '24  - Continued waved lauches throughout Q1 '2025'",
     },
     {
@@ -138,13 +138,13 @@ export const OWNED_BRAND_DATA = {
       label: "Smartly",
       image: smart,
       pyramid: {
-        primary: "E&B",
+        primary: "Everyday Care",
         secondary: "N/A",
       },
       goal: "Simplify Guest shopping experience.",
       what_happen: "Exit",
       description:
-        "Phased Exit, categories will be absorbed into Up&Up & dealworthy.",
+        "Phased Exit, categories will be absorbed into up&up & dealworthy.",
       when: "Phased Exit starts in Feb '24 - Final exit in Q1'25",
     },
   ],
@@ -203,8 +203,8 @@ export const OWNED_BRAND_DATA = {
       },
       goal: "Amplify awareness and exceitemnt for Market Pantry to build trust with our guests, improve navigation, overall price perception, and drive sales.",
       description:
-        "Repositioning from a brand our guests only trust for low price to a brand that they will trust for low-price, quality, taste and quantity.Refresh includes updated photography cueing product type, flavor, taste appeal, abundance, and improved guest navigation.",
-      when: "First wave launch in Feb '24' - Final Launch through Q4 '24",
+        "Repositioning from a brand our guests only trust for low price to a brand that they will trust for low-price, quality, taste and quantity. Refresh includes updated photography cueing product type, flavor, taste appeal, abundance, and improved guest navigation.",
+      when: "Launches Q3'24 - Q4'24",
     },
   ],
 
@@ -231,25 +231,6 @@ export const OWNED_BRAND_DATA = {
     {
       id: 2,
       key: "02",
-      width: 100,
-      left: 945,
-      top: 15,
-      color: "#9ca3af",
-      label: "Giggle Scape",
-      image: giggleScape,
-      pyramid: {
-        primary: "F&B",
-        secondary: "N/A",
-      },
-      goal: "New Toy Brand designed to amplify our already strong Toy momentum with an irresistible selection of books, toys and games throughout 2024.",
-      what_happen: "Launch",
-      description:
-        "Gigglescape was designed to focus on curiosity, learning & development and created with both kids and parents in mind.",
-      when: "First Launch Jan '24 - Final Launch August '24",
-    },
-    {
-      id: 3,
-      key: "03",
       width: 245,
       left: 40,
       top: 70,
@@ -257,7 +238,7 @@ export const OWNED_BRAND_DATA = {
       label: "Embark",
       image: embark,
       pyramid: {
-        primary: "F&B",
+        primary: "Hardlines",
         secondary: "N/A",
       },
       goal: "Shifting  from a narrowly focused camping brand to an inclusive outdoor adventure brand.",
@@ -310,8 +291,8 @@ export const OWNED_BRAND_DATA = {
     {
       id: 3,
       key: "03",
-      width: 840,
-      left: 120,
+      width: 915,
+      left: 40,
       top: 61,
       color: "#9ca3af",
       label: "Threshold",
@@ -352,7 +333,7 @@ export const OWNED_BRAND_DATA = {
       left: 120,
       top: 163,
       color: "#9ca3af",
-      label: "Project 162",
+      label: "Project 62",
       image: project,
       pyramid: {
         primary: "Home",
