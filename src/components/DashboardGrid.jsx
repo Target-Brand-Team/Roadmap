@@ -12,6 +12,7 @@ const DashboardGrid = ({
   setShowCultural,
   setShowOwned,
   showOwned,
+ 
 }) => {
   return (
     <div className="flex gap-1 mt-[-5px] ">
@@ -25,7 +26,7 @@ const DashboardGrid = ({
         <div className="pl-2 w-[250px]">
           <div className="flex items-center">
             <strong className="text-lg text-[#ffad00] font-semibold">
-              Big Picture Context
+              Cultural Context
             </strong>
           </div>
           <span className="text-[12px]  text-gray-700">

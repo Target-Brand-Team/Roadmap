@@ -20,8 +20,6 @@ const Sidebar = () => {
             <img src={newLogo} className="w-[110px] ml-1" />
           </div>
 
-          <span className="divider"></span>
-
           <div className="absolute top-3 left-[130px] text-2xl text-red-600">
             {/* <RxDoubleArrowLeft
               onClick={() => setHideSidebar(!hideSidebar)}
