@@ -115,7 +115,7 @@ const DashboardGrid = ({
 
         {showOwned ? (
           <div className="h-full w-9 pl-3 text-2xl flex justify-center items-start group">
-             <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 text-[14px] text-center text-gray-600 rounded shadow-xl p-1 w-16 h-8 absolute top-6 right-2 bg-white ">
+             <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 text-[14px] text-center text-gray-600 rounded shadow-xl p-1 w-16 h-8 absolute top-6 right-4 bg-white ">
               Close
             </span>
             <div>
@@ -124,7 +124,7 @@ const DashboardGrid = ({
           </div>
         ) : (
           <div className="h-full w-9 pl-3 mt-[-15px] text-2xl flex justify-center items-start group">
-           <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 text-[14px] text-center text-gray-600 rounded shadow-xl p-1 w-16 h-8 absolute top-6 right-2 bg-white ">
+           <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 text-[14px] text-center text-gray-600 rounded shadow-xl p-1 w-16 h-8 absolute top-6 right-4 bg-white ">
               Open
             </span>
             <div>

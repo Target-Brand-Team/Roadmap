@@ -135,7 +135,7 @@ export const OWNED_BRAND_DATA = {
       left: 40,
       top: 118,
       color: "#9ca3af",
-      label: "Smartly",
+      label: "Smartly (Exiting)",
       image: smart,
       pyramid: {
         primary: "Everyday Care",
@@ -314,7 +314,7 @@ export const OWNED_BRAND_DATA = {
       left: 120,
       top: 113,
       color: "#9ca3af",
-      label: "Made By Design",
+      label: "Made By Design (Exiting)",
       image: madeByDesign,
       pyramid: {
         primary: "Home",
@@ -333,7 +333,7 @@ export const OWNED_BRAND_DATA = {
       left: 120,
       top: 163,
       color: "#9ca3af",
-      label: "Project 62",
+      label: "Project 62 (Exiting)",
       image: project,
       pyramid: {
         primary: "Home",
@@ -352,7 +352,7 @@ export const OWNED_BRAND_DATA = {
       left: 120,
       top: 210,
       color: "#9ca3af",
-      label: "Opalhouse",
+      label: "Opalhouse (Exiting)",
       image: opalhouse,
       pyramid: {
         primary: "Home",
