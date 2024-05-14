@@ -9,15 +9,20 @@ import { FaPlus } from "react-icons/fa6";
 import { FaMinus } from "react-icons/fa6";
 
 const Enterprise = () => {
+  const [data, setData] = useState(ENTERPRISE_PRIORITIES);
   const [modal, setModal] = useState(false);
   const [modalAlways, setModalAlways] = useState(false);
-  const [data, setData] = useState(ENTERPRISE_PRIORITIES);
   const [dataIndexEnterprise, setDataIndexEnterprise] = useState(null);
   const [variable, setVariable] = useState("");
   const [tgtToggle, setTgtToggle] = useState(false);
   const [ltoToggle, setLtoToggle] = useState(false);
   const [strategicToggle, setStrategicToggle] = useState(false);
   const [mainBarToggle, setMainBarToggle] = useState(true);
+  const [disneyToggle, setDisneyToggle] = useState(false);
+  const [appleToggle, setAppleToggle] = useState(false);
+  const [levisToggle, setLevisToggle] = useState(false);
+  const [ultaToggle, setUltaToggle] = useState(false);
+  const [nationalToggle, setNationalToggle] = useState(false);
 
   return (
     <main className="flex flex-col w-full mt-[-7px]">
@@ -186,164 +191,209 @@ const Enterprise = () => {
             {strategicToggle ? (
               <div className="flex flex-col gap-1">
                 {/* ==== DISNEY */}
-                <div className="shadow h-[160px] flex ">
-                  <span
-                    className="vertical text-[13px] text-white bg-sky-700 hover:bg-sky-950 text-center font-semibold p-2 py-3 rounded-tr-md rounded-br-md cursor-pointer "
-                    onClick={() => setStrategicToggle(false)}
+                {disneyToggle ? (
+                  <div
+                    className="bg-sky-600 flex items-center text-white font-thin rounded text-center mt-[-3px] py-1 cursor-pointer hover:bg-sky-800 group"
+                    onClick={() => setDisneyToggle(false)}
                   >
-                    Disney
-                  </span>
-
-                  {data?.DISNEY?.map((item, index) => (
-                    <div
-                      key={item.id}
-                      className="absolute"
-                      onClick={() => {
-                        setVariable("DISNEY");
-                        setDataIndexEnterprise(index);
-                        setModal(!modal);
-                        console.log(item);
-                      }}
+                    <h3 className="ml-[502px] font-medium ">Disney</h3>
+                  </div>
+                ) : (
+                  <div className="shadow h-[160px] flex mt-[-3px]">
+                    <span
+                      className="vertical text-[13px] text-white bg-sky-600 hover:bg-sky-800 text-center font-semibold p-2 py-3 rounded-tr-md rounded-br-md cursor-pointer "
+                      onClick={() => setDisneyToggle(true)}
                     >
-                      <EnterpriseRollover
-                        width={item?.width}
-                        height="40px"
-                        left={item?.left}
-                        top={item.top}
-                        text={item.label}
-                        backgroundColor={item.color}
-                      />
-                    </div>
-                  ))}
-                </div>
+                      Disney
+                    </span>
+
+                    {data?.DISNEY?.map((item, index) => (
+                      <div
+                        key={item.id}
+                        className="absolute"
+                        onClick={() => {
+                          setVariable("DISNEY");
+                          setDataIndexEnterprise(index);
+                          setModal(!modal);
+                          console.log(item);
+                        }}
+                      >
+                        <EnterpriseRollover
+                          width={item?.width}
+                          height="40px"
+                          left={item?.left}
+                          top={item.top}
+                          text={item.label}
+                          backgroundColor={item.color}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                )}
 
                 {/* ==== APPLE */}
-                <div className="shadow h-[160px] flex ">
-                  <span
-                    className="vertical text-[13px] text-white bg-sky-600 hover:bg-sky-950 text-center font-semibold p-2 py-3 rounded-tr-md rounded-br-md cursor-pointer "
-                    onClick={() => setStrategicToggle(false)}
+                {appleToggle ? (
+                  <div
+                    className="bg-sky-500 flex items-center text-white font-thin rounded text-center py-1 cursor-pointer hover:bg-sky-800 group"
+                    onClick={() => setAppleToggle(false)}
                   >
-                    Apple
-                  </span>
-
-                  {data?.APPLE?.map((item, index) => (
-                    <div
-                      key={item.id}
-                      className="absolute"
-                      onClick={() => {
-                        setVariable("APPLE");
-                        setDataIndexEnterprise(index);
-                        setModal(!modal);
-                        console.log(item);
-                      }}
+                    <h3 className="ml-[506px] font-medium ">Apple</h3>
+                  </div>
+                ) : (
+                  <div className="shadow h-[160px] flex ">
+                    <span
+                      className="vertical text-[13px] text-white bg-sky-500 hover:bg-sky-800 text-center font-semibold p-2 py-3 rounded-tr-md rounded-br-md cursor-pointer "
+                      onClick={() => setAppleToggle(true)}
                     >
-                      <EnterpriseRollover
-                        width={item?.width}
-                        height="40px"
-                        left={item?.left}
-                        top={item.top}
-                        text={item.label}
-                        backgroundColor={item.color}
-                      />
-                    </div>
-                  ))}
-                </div>
+                      Apple
+                    </span>
+
+                    {data?.APPLE?.map((item, index) => (
+                      <div
+                        key={item.id}
+                        className="absolute"
+                        onClick={() => {
+                          setVariable("APPLE");
+                          setDataIndexEnterprise(index);
+                          setModal(!modal);
+                          console.log(item);
+                        }}
+                      >
+                        <EnterpriseRollover
+                          width={item?.width}
+                          height="40px"
+                          left={item?.left}
+                          top={item.top}
+                          text={item.label}
+                          backgroundColor={item.color}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                )}
 
                 {/* ==== LEVI'S */}
-                <div className="shadow h-[160px] flex ">
-                  <span
-                    className="vertical text-[13px] text-white bg-sky-500 hover:bg-sky-950 text-center font-semibold p-2 py-3 rounded-tr-md rounded-br-md cursor-pointer "
-                    onClick={() => setStrategicToggle(false)}
+                {levisToggle ? (
+                  <div
+                    className="bg-sky-400 flex items-center text-white font-thin rounded text-center py-1 cursor-pointer hover:bg-sky-800 group"
+                    onClick={() => setLevisToggle(false)}
                   >
-                    Levi's
-                  </span>
-
-                  {data?.LEVI?.map((item, index) => (
-                    <div
-                      key={item.id}
-                      className="absolute"
-                      onClick={() => {
-                        setVariable("LEVI");
-                        setDataIndexEnterprise(index);
-                        setModal(!modal);
-                        console.log(item);
-                      }}
+                    <h3 className="ml-[509px] font-medium ">Levi's</h3>
+                  </div>
+                ) : (
+                  <div className="shadow h-[160px] flex ">
+                    <span
+                      className="vertical text-[13px] text-white bg-sky-400 hover:bg-sky-800 text-center font-semibold p-2 py-3 rounded-tr-md rounded-br-md cursor-pointer "
+                      onClick={() => setLevisToggle(true)}
                     >
-                      <EnterpriseRollover
-                        width={item?.width}
-                        height="40px"
-                        left={item?.left}
-                        top={item.top}
-                        text={item.label}
-                        backgroundColor={item.color}
-                      />
-                    </div>
-                  ))}
-                </div>
+                      Levi's
+                    </span>
+
+                    {data?.LEVI?.map((item, index) => (
+                      <div
+                        key={item.id}
+                        className="absolute"
+                        onClick={() => {
+                          setVariable("LEVI");
+                          setDataIndexEnterprise(index);
+                          setModal(!modal);
+                          console.log(item);
+                        }}
+                      >
+                        <EnterpriseRollover
+                          width={item?.width}
+                          height="40px"
+                          left={item?.left}
+                          top={item.top}
+                          text={item.label}
+                          backgroundColor={item.color}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                )}
 
                 {/* ==== ULTA */}
-                <div className="shadow h-[160px] flex ">
-                  <span
-                    className="vertical text-[13px] text-white bg-sky-400 hover:bg-sky-950 text-center font-semibold p-2 py-3 rounded-tr-md rounded-br-md cursor-pointer "
-                    onClick={() => setStrategicToggle(false)}
+                {ultaToggle ? (
+                  <div
+                    className="bg-sky-300 flex items-center text-white font-thin rounded text-center py-1 cursor-pointer hover:bg-sky-800 group"
+                    onClick={() => setUltaToggle(false)}
                   >
-                    Ulta Beauty
-                  </span>
-
-                  {data?.ULTA?.map((item, index) => (
-                    <div
-                      key={item.id}
-                      className="absolute"
-                      onClick={() => {
-                        setVariable("ULTA");
-                        setDataIndexEnterprise(index);
-                        setModal(!modal);
-                        console.log(item);
-                      }}
+                    <h3 className="ml-[488px] font-medium ">Ulta Beauty</h3>
+                  </div>
+                ) : (
+                  <div className="shadow h-[160px] flex ">
+                    <span
+                      className="vertical text-[13px] text-white bg-sky-300 hover:bg-sky-800 text-center font-semibold p-2 py-3 rounded-tr-md rounded-br-md cursor-pointer "
+                      onClick={() => setUltaToggle(true)}
                     >
-                      <EnterpriseRollover
-                        width={item?.width}
-                        height="40px"
-                        left={item?.left}
-                        top={item.top}
-                        text={item.label}
-                        backgroundColor={item.color}
-                      />
-                    </div>
-                  ))}
-                </div>
+                      Ulta Beauty
+                    </span>
+
+                    {data?.ULTA?.map((item, index) => (
+                      <div
+                        key={item.id}
+                        className="absolute"
+                        onClick={() => {
+                          setVariable("ULTA");
+                          setDataIndexEnterprise(index);
+                          setModal(!modal);
+                          console.log(item);
+                        }}
+                      >
+                        <EnterpriseRollover
+                          width={item?.width}
+                          height="40px"
+                          left={item?.left}
+                          top={item.top}
+                          text={item.label}
+                          backgroundColor={item.color}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                )}
 
                 {/* ==== NATIONAL */}
-                <div className="shadow h-[160px] flex ">
-                  <span
-                    className="vertical text-[13px] text-white bg-sky-300 hover:bg-sky-950 text-center font-semibold p-2 py-3 rounded-tr-md rounded-br-md cursor-pointer "
-                    onClick={() => setStrategicToggle(false)}
+                {nationalToggle ? (
+                  <div
+                    className="bg-sky-200 flex items-center text-white font-thin rounded text-center py-1 cursor-pointer hover:bg-sky-800 group"
+                    onClick={() => setNationalToggle(false)}
                   >
-                    Nat's Brand Launch
-                  </span>
-
-                  {data?.NATIONAL?.map((item, index) => (
-                    <div
-                      key={item.id}
-                      className="absolute"
-                      onClick={() => {
-                        setVariable("NATIONAL");
-                        setDataIndexEnterprise(index);
-                        setModal(!modal);
-                        console.log(item);
-                      }}
+                    <h3 className="ml-[451px] font-medium ">National Brand Launch</h3>
+                  </div>
+                ) : (
+                  <div className="shadow h-[160px] flex ">
+                    <span
+                      className="vertical text-[13px] text-white bg-sky-200 hover:bg-sky-800 text-center font-semibold p-2 py-3 rounded-tr-md rounded-br-md cursor-pointer "
+                      onClick={() => setNationalToggle(true)}
                     >
-                      <EnterpriseRollover
-                        width={item?.width}
-                        height="40px"
-                        left={item?.left}
-                        top={item.top}
-                        text={item.label}
-                        backgroundColor={item.color}
-                      />
-                    </div>
-                  ))}
-                </div>
+                      Nat's Brand Launch
+                    </span>
+
+                    {data?.NATIONAL?.map((item, index) => (
+                      <div
+                        key={item.id}
+                        className="absolute"
+                        onClick={() => {
+                          setVariable("NATIONAL");
+                          setDataIndexEnterprise(index);
+                          setModal(!modal);
+                          console.log(item);
+                        }}
+                      >
+                        <EnterpriseRollover
+                          width={item?.width}
+                          height="40px"
+                          left={item?.left}
+                          top={item.top}
+                          text={item.label}
+                          backgroundColor={item.color}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             ) : null}
           </section>
