@@ -10,7 +10,7 @@ const Cultural = () => {
     <section>
       <div className="bg-targetYellow flex items-center text-white rounded text-center text-lg mb-1 py-2 cursor-pointer group">
         {/* Tootip */}
-        <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 bg-yellow-500 text-white text-sm rounded shadow-xl absolute bottom- left-1 px-1 py-2 rotate  w-28 h-[239px]">
+        <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 bg-yellow-500 text-white text-sm font-thin rounded shadow-xl absolute bottom- left-1 px-1 py-2 rotate  w-28 h-[239px]">
           The biggest cultural happenings and commercial events that have an impact on customer behavior and should inspire and guide our thinking
         </span>
         <h3 className="ml-[461px]">Cultural Context</h3>
