@@ -12,8 +12,9 @@ export const ENTERPRISE_PRIORITIES = {
       top: 10,
       color: "#0c4a6e",
       label: "Hilton Carter",
-      description01: "• Hilton Carter (Project Flower)",
-      description02: "• Product Category: Home/Outdoor",
+      description01: "",
+      description02: "• Hilton Carter (Project Flower)",
+      description03: "• Product Category: Home/Outdoor",
     },
     {
       id: 2,
@@ -23,8 +24,9 @@ export const ENTERPRISE_PRIORITIES = {
       top: 10,
       color: "#0c4a6e",
       label: "Project Diamond",
-      description01: "• Product Category: A&A -  Women's & Girls",
-      description02: "• Tied to Women's History Month",
+      description01: "",
+      description02: "• Product Category: A&A -  Women's & Girls",
+      description03: "• Tied to Women's History Month",
     },
     {
       id: 3,
@@ -34,7 +36,8 @@ export const ENTERPRISE_PRIORITIES = {
       top: 10,
       color: "#0c4a6e",
       label: "Project Unity",
-      description01: "• Product Categories: Pets and Apparel",
+      description01: "",
+      description02: "• Product Categories: Pets and Apparel",
     },
   ],
 
@@ -91,7 +94,8 @@ export const ENTERPRISE_PRIORITIES = {
       top: 5,
       color: "#06b6d4",
       label: "Black History Month",
-      description01: "Target Foward Moments (Storytelling):Black History Month",
+      description00: "Target Forward Moments (Storytelling):",
+      description01: "Black History Month",
       description02: "• Black Beyond Measure",
       description03: "• Black Farm Cotton",
     },
@@ -103,7 +107,8 @@ export const ENTERPRISE_PRIORITIES = {
       top: 55,
       color: "#06b6d4",
       label: "Spring Newness (Beauty)",
-      description01: "Target Foward Moments (Storytelling): Spring Newness - Seasonal Merc Transition ",
+      description00: "Target Forward Moments (Storytelling):",
+      description01: "Spring Newness - Seasonal Merch Transition ",
       description02: "• Beauty + Target Clean story",
       description03: "",
     },
@@ -115,7 +120,8 @@ export const ENTERPRISE_PRIORITIES = {
       top: 5,
       color: "#06b6d4",
       label: "Earth Month",
-      description01: "Target Foward Moments (Storytelling): Earth Month",
+      description00: "Target Forward Moments (Storytelling):",
+      description01: "Earth Month",
       description02: "• EON, Accelerating Circularity, Recycled Denim, Ciclo (Universal Thread)",
       description03: "• Sustainable Seafood, Waterless formulations (Kindfull)",
       description04: "• Palm, Seafood, etc.​ (Good & Gather)",
@@ -131,7 +137,8 @@ export const ENTERPRISE_PRIORITIES = {
       top: 55,
       color: "#06b6d4",
       label: "Spring Newness (Everyday Care)",
-      description01: "Target Foward Moments (Storytelling): Spring Newness - Seasonal Merc Transition",
+      description00: "Target Forward Moments (Storytelling):",
+      description01: "Spring Newness - Seasonal Merch Transition",
       description02: "• Everyday Care: Essentials & Healthcare",
       description03: "",
     },
@@ -143,7 +150,8 @@ export const ENTERPRISE_PRIORITIES = {
       top: 5,
       color: "#06b6d4",
       label: "Pride",
-      description01: "Target Foward Moments (Storytelling): Pride Month",
+      description00: "Target Forward Moments (Storytelling):",
+      description01: "Pride Month",
       description02: "• Story/Brands TBD",
       description03: "",
     },
@@ -155,7 +163,8 @@ export const ENTERPRISE_PRIORITIES = {
       top: 5,
       color: "#06b6d4",
       label: "BTS/BTC Dressing",
-      description01: "Target Foward Moments (Storytelling): BTS/BTC Dressing",
+      description00: "Target Forward Moments (Storytelling):",
+      description01: "BTS/BTC Dressing",
       description02: "• Better Denim (Universal Thread, Wild Fable, Cat & Jack, Goodfellow)",
       description03: "• Durability (Cat & Jack)",
     },
@@ -167,7 +176,8 @@ export const ENTERPRISE_PRIORITIES = {
       top: 55,
       color: "#06b6d4",
       label: "Innovation (Starbucks)",
-      description01: "Target Foward Moments (Storytelling): Innovation",
+      description00: "Target Forward Moments (Storytelling):",
+      description01: "Innovation",
       description02: "• Next Gen/Starbucks Reusable Cup Pilot",
       description03: "",
     },
@@ -179,7 +189,8 @@ export const ENTERPRISE_PRIORITIES = {
       top: 55,
       color: "#06b6d4",
       label: "Wellness",
-      description01: "Target Foward Moments (Storytelling): Wellness",
+      description00: "Target Forward Moments (Storytelling):",
+      description01: "Wellness",
       description02: "• E&B or F&B Transition story TBC",
       description03: "",
     },
@@ -309,7 +320,7 @@ export const ENTERPRISE_PRIORITIES = {
       label: "Tech Gifts (Q4)",
       description01: "Apple Tech Gifts (Q4) ",
       description02:
-        "• Product Categories: iPad, Watches, AirPods, Accessories",
+        "• Product Categories: iPad, Watches, AirPods",
       description03:
         "• Set: TBC",
     },
@@ -337,15 +348,20 @@ export const ENTERPRISE_PRIORITIES = {
       color: "#0ea5e9",
       label: "Spring Newness",
       description01:
-        "",
+        "Levi's Spring Newness",
       description02:
-        "RTW Women's: Product Categories: Baggy Trends, Denim Dressing (Truckers, Vests, Jumpsuits/Rompers), Shorts",
+        "RTW Women's:",
       description03:
-        "• Set: Feb Wk 2/3",
+        "• Product Categories: Baggy Trends, Denim Dressing (Truckers, Vests, Jumpsuits/Rompers), Shorts",
       description04:
-        "• Men's Set Week: Product Categories: Classic Denim, Woven Shirts, Refreshed Fleece, Tees",
+        "• Set: Feb Wk 2/3",
       description05:
+        "Men's Set Week:",
+      description06:
+        "• Product Categories: Classic Denim, Woven Shirts, Refreshed Fleece, Tees",
+      description07:
         "• Set: Feb Wk 3/4",
+     
     },
     {
       id: 2,
@@ -447,9 +463,9 @@ export const ENTERPRISE_PRIORITIES = {
       top: 55,
       color: "#38bdf8",
       label: "Kylie Cosmetics Launch",
-      description01:
-        "Product Categories: Cosmetics ",
-      description02: "• Set: TBD",
+      description02:
+        "• Product Categories: Cosmetics ",
+      description03: "• Set: TBD",
     },
     {
       id: 3,
@@ -460,9 +476,11 @@ export const ENTERPRISE_PRIORITIES = {
       color: "#38bdf8",
       label: "BTS/BTC Beauty",
       description01:
-        "Product Categories: Skincare, Haircare, Cosmetics",
-      description02: "• Focus: Affordability",
-      description03: "• Set: TBD",
+        "BTS/BTC Beauty (Key Drive Time)",
+      description02:
+        "• Product Categories: Skincare, Haircare, Cosmetics",
+      description03: "• Focus: Affordability",
+      description04: "• Set: TBD",
     },
     {
       id: 4,
@@ -486,9 +504,11 @@ export const ENTERPRISE_PRIORITIES = {
       color: "#38bdf8",
       label: "Beauty Gifts",
       description01:
-        "Product Categories: All ",
-      description02: "• Focus: Minis, Kits/Gift Sets",
-      description03: "• Set: TBD",
+        "Holiday Beauty Gifts (Key Drive Time)",
+      description02:
+        "• Product Categories: All ",
+      description03: "• Focus: Minis, Kits/Gift Sets",
+      description04: "• Set: TBD",
     },
   ],
 
@@ -502,9 +522,9 @@ export const ENTERPRISE_PRIORITIES = {
       top: 5,
       color: "#7dd3fc",
       label: "Project Crown Pickleball",
-      description01:
-        "Product Categories: Sporting Goods, A&A",
       description02:
+        "• Product Categories: Sporting Goods, A&A",
+      description03:
         "• Set: 4/21 (4-5 weeks)",
     },
     {
@@ -515,9 +535,9 @@ export const ENTERPRISE_PRIORITIES = {
       top: 5,
       color: "#7dd3fc",
       label: "Project SZ",
-      description01:
-        "Product Categories: Apparel & Shoes",
-      description02: "• Set: July Wk 2/3 (300 stores + digital)",
+      description02:
+        "• Product Categories: Apparel & Shoes",
+      description03: "• Set: July Wk 2/3 (300 stores + digital)",
     },
     {
       id: 3,
@@ -527,10 +547,10 @@ export const ENTERPRISE_PRIORITIES = {
       top: 5,
       color: "#7dd3fc",
       label: "Project Charlie",
-      description01:
-        "Product Categories: Kids Apparel",
-      description02: "• Set: Sept Wk 2 (100 stores + digital)",
-      description03: "",
+      description02:
+        "• Product Categories: Kids Apparel",
+      description03: "• Set: Sept Wk 2 (100 stores + digital)",
+    
     },
   
   ],

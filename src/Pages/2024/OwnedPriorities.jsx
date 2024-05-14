@@ -89,7 +89,7 @@ const OwnedPriorities = () => {
             ) : (
               <div className="shadow h-48 flex flex-wrap relative">
                 <div
-                  className="vertical flex items-center text-[13px] pt-5 text-white bg-green-800 text-center font-semibold p-2 
+                  className="vertical flex items-center text-[13px] pt-2 text-white bg-green-800 text-center font-semibold p-2 
                  hover:bg-green-950 cursor-pointer rounded-tr-md rounded-br-md"
                   onClick={() => setAccessoriesToggle(true)}
                 >
@@ -133,7 +133,7 @@ const OwnedPriorities = () => {
             ) : (
               <div className="shadow h-48 flex flex-wrap relative">
                 <div
-                  className="vertical flex items-center text-[13px] pt-12 text-white bg-green-700 text-center font-semibold p-2 
+                  className="vertical flex items-center text-[13px] pt-10 text-white bg-green-700 text-center font-semibold p-2 
                  hover:bg-green-950 cursor-pointer rounded-tr-md rounded-br-md"
                   onClick={() => setEssentialToggle(true)}
                 >
@@ -177,7 +177,7 @@ const OwnedPriorities = () => {
             ) : (
               <div className="shadow h-48 flex flex-wrap relative">
                 <div
-                  className="vertical flex items-center text-[13px] pt-10 text-white bg-green-600 text-center font-semibold p-2 hover:bg-green-950 cursor-pointer rounded-tr-md rounded-br-md"
+                  className="vertical flex items-center text-[13px] pt-8 text-white bg-green-600 text-center font-semibold p-2 hover:bg-green-950 cursor-pointer rounded-tr-md rounded-br-md"
                   onClick={() => setFoodToggle(true)}
                 >
                   <span>Food & Beverage</span>
@@ -219,7 +219,7 @@ const OwnedPriorities = () => {
             ) : (
               <div className="shadow h-48 flex flex-wrap relative">
                 <div
-                  className="vertical flex text-[13px] pt-16 text-white bg-green-500 text-center font-semibold p-2 hover:bg-green-950 cursor-pointer rounded-tr-md rounded-br-md"
+                  className="vertical flex text-[13px] pt-14 text-white bg-green-500 text-center font-semibold p-2 hover:bg-green-950 cursor-pointer rounded-tr-md rounded-br-md"
                   onClick={() => setHardlinesToggle(true)}
                 >
                   <span>Hardlines</span>
@@ -266,7 +266,7 @@ const OwnedPriorities = () => {
                   onClick={() => setHomeToggle(true)}
                 >
                   <span>Home</span>
-                  <HiChevronDown className="text-xl mt-20" />
+                  <HiChevronDown className="text-xl mt-16" />
                 </div>
 
                 {ownedData?.HOME?.map((item, index) => (

@@ -96,12 +96,10 @@ const Enterprise = () => {
               {/* Tootip */}
               <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 bg-sky-800 text-white text-sm text-center rounded shadow-xl absolute bottom- left-1 px-2 py-5 rotate  w-28 h-48">
                 Enterprise Initiatives related to Target's commitments to
-                sustainability and inclusive
+                sustainability and inclusivity
               </span>
 
-              <h3 className="ml-[380px]">
-                TGT Forward & Inclusive Initiatives
-              </h3>
+              <h3 className="ml-[430px]">Target Forward</h3>
             </div>
 
             {tgtToggle ? (
@@ -179,9 +177,10 @@ const Enterprise = () => {
               <HiChevronDown className="ml-6 text-xl" />
               {/* Tootip */}
               <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 bg-sky-700 text-white text-sm rounded shadow-xl absolute bottom- left-1 px-2 py-5 rotate  w-28 h-48">
-                Strategic Partnership are business partnership initiatives
+                Key external Partnerships that expand & enhance Target's
+                presence
               </span>
-              <h3 className="ml-[420px]">Strategic Partnership</h3>
+              <h3 className="ml-[420px]">Strategic Partnerships</h3>
             </div>
 
             {strategicToggle ? (
@@ -320,7 +319,7 @@ const Enterprise = () => {
                     className="vertical text-[13px] text-white bg-sky-300 hover:bg-sky-950 text-center font-semibold p-2 py-3 rounded-tr-md rounded-br-md cursor-pointer "
                     onClick={() => setStrategicToggle(false)}
                   >
-                    National
+                    Nat's Brand Launch
                   </span>
 
                   {data?.NATIONAL?.map((item, index) => (
@@ -354,7 +353,7 @@ const Enterprise = () => {
       {/* ================================== MODAL ENTERPRISE === */}
       {modal ? (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-          <div className="bg-white w-[900px] h-[350px] p-1 rounded-lg shadow-xl mt-14">
+          <div className="bg-white w-[900px] h-[400px] p-1 rounded-lg shadow-xl mt-14">
             <div className="flex justify-end">
               <IoClose
                 className="text-[35px] text-gray-700 cursor-pointer"
@@ -376,7 +375,15 @@ const Enterprise = () => {
                         <dt className="ml-6 font-semibold leading-6 text-gray-900">
                           Description:
                         </dt>
-                        <dd className="mt-1 leading-6 text-gray-500 flex flex-col   ">
+                        <dd className="mt-1 leading-6 text-gray-500 flex flex-col gap-1 ">
+                          <span>
+                            <b>
+                              {
+                                data[variable][dataIndexEnterprise]
+                                  .description00
+                              }
+                            </b>
+                          </span>
                           <span>
                             <b>
                               {
@@ -396,6 +403,12 @@ const Enterprise = () => {
                           </span>
                           <span>
                             {data[variable][dataIndexEnterprise].description05}
+                          </span>
+                          <span>
+                            {data[variable][dataIndexEnterprise].description06}
+                          </span>
+                          <span>
+                            {data[variable][dataIndexEnterprise].description07}
                           </span>
                         </dd>
                       </div>
