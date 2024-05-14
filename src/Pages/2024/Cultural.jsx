@@ -2,35 +2,39 @@ import React, { useState } from "react";
 import { CULTURAL_CONTEXT_LINKS } from "../../Database_2024/2024/CulruralData";
 import { FaPlus } from "react-icons/fa6";
 import { FaMinus } from "react-icons/fa6";
+import { HiChevronDown } from "react-icons/hi2";
+
 
 const Cultural = () => {
   const [mainBarToggle, setMainBarToggle] = useState(true);
 
   return (
     <section>
-      <div className="bg-targetYellow flex items-center text-white rounded text-center text-lg mb-1 py-2 cursor-pointer group">
+      <div
+        className="bg-targetYellow hover:bg-yellow-600 flex items-center text-white rounded text-center text-lg mb-1 py-2 cursor-pointer group"
+        onClick={() => setMainBarToggle(!mainBarToggle)}
+      >
         {/* Tootip */}
         <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 bg-yellow-500 text-white text-sm font-thin rounded shadow-xl absolute bottom- left-1 px-1 py-2 rotate  w-28 h-[239px]">
-          The biggest cultural happenings and commercial events that have an impact on customer behavior and should inspire and guide our thinking
+          The biggest cultural happenings and commercial events that have an
+          impact on customer behavior and should inspire and guide our thinking
         </span>
         <h3 className="ml-[461px]">Cultural Context</h3>
         {mainBarToggle ? (
-          <FaMinus
-            className="ml-[433px] cursor-pointer text-[16px]"
-            onClick={() => setMainBarToggle(!mainBarToggle)}
-          />
+          <FaMinus className="ml-[433px] cursor-pointer text-[16px]" />
         ) : (
-          <FaPlus
-            className="ml-[433px] cursor-pointer text-[16px]"
-            onClick={() => setMainBarToggle(!mainBarToggle)}
-          />
+          <FaPlus className="ml-[433px] cursor-pointer text-[16px]" />
         )}
       </div>
 
       {mainBarToggle ? (
         <div className=" flex">
-          <div className="bg-targetYellow vertical rounded-tr-md rounded-br-md p-1 gap-2 text-center text-[13px] font-semibold text-white border border-gray-200 flex justify-center items-center w-9 cursor-pointer">
-            Cultutal Context
+          <div
+            className="bg-targetYellow  hover:bg-yellow-600 vertical rounded-tr-md rounded-br-md p-1 gap-2 text-center text-[13px] font-semibold text-white border border-gray-200 flex items-center justify-center w-9 cursor-pointer"
+            onClick={() => setMainBarToggle(!mainBarToggle)}
+          >
+            <span className="pt-5">Cultutal Context</span> 
+             <HiChevronDown className="mt-3 text-xl" />
           </div>
 
           {/* ====   FIRST QUATER Q1  ==== */}

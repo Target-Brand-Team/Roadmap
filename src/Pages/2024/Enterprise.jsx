@@ -23,10 +23,15 @@ const Enterprise = () => {
   const [levisToggle, setLevisToggle] = useState(false);
   const [ultaToggle, setUltaToggle] = useState(false);
   const [nationalToggle, setNationalToggle] = useState(false);
+  const [alwaysToggle, setAlwaysToggle] = useState(false);
+  const [momentsToggle, setMomentsToggle] = useState(false);
 
   return (
     <main className="flex flex-col w-full mt-[-7px]">
-      <div className="bg-sky-950 flex items-center text-white rounded text-center text-lg mb- py-2">
+      <div
+        className="bg-sky-950 hover:bg-cyan-900 flex items-center text-white rounded text-center text-lg mb- py-2 cursor-pointer"
+        onClick={() => setMainBarToggle(!mainBarToggle)}
+      >
         <h3 className="ml-[448px]">Enterprise Priorities</h3>
         {mainBarToggle ? (
           <FaMinus
@@ -50,28 +55,29 @@ const Enterprise = () => {
               className="bg-sky-900 flex items-center text-white font-thin rounded text-center py-2 mt-1 cursor-pointer hover:bg-sky-950 group"
               onClick={() => setLtoToggle(!ltoToggle)}
             >
-              <HiChevronDown className="ml-6 text-xl" />
+              <HiChevronDown className="ml-2 text-xl" />
               {/* Tootip */}
               <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 bg-sky-900 text-white text-sm rounded shadow-xl absolute bottom- left-1 px-2 py-5 rotate  w-28 h-48">
                 LTO (Limited Time Offering), is a Target exclusive and
                 time-based cross-category collection drop
               </span>
-              <h3 className="ml-[470px]">LTO</h3>
+              <h3 className="ml-[485px]">LTO</h3>
             </div>
 
             {ltoToggle ? (
               <div className="shadow h-[160px] flex relative ">
-                <span
-                  className="vertical text-[13px] text-white bg-sky-900  hover:bg-sky-950 text-center font-semibold p-2 flex justify-center items-center rounded-tr-md rounded-br-md cursor-pointer group"
-                  onClick={() => setLtoToggle(true)}
+                <div
+                  className="vertical text-[13px] text-white bg-sky-900 hover:bg-sky-950 text-center font-semibold p-2 flex justify-center items-center rounded-tr-md rounded-br-md cursor-pointer group"
+                  onClick={() => setLtoToggle(false)}
                 >
-                  LTO
-                </span>
+                  <span className="mt-14">LTO</span>
+                  <HiChevronDown className="mt-8 text-xl" />
+                </div>
 
                 {data?.LTO?.map((item, index) => (
                   <div
                     key={item.id}
-                    className="absolute"
+                    className="absolute group"
                     onClick={() => {
                       setVariable("LTO");
                       setDataIndexEnterprise(index);
@@ -86,6 +92,10 @@ const Enterprise = () => {
                       text={item.label}
                       backgroundColor={item.color}
                     />
+
+                    <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 text-[14px] text-center text-gray-500 rounded shadow-xl p-1 w-32 h-8 absolute top-[120px] left-[490px] bg-cyan-200 ">
+                      Click for Details
+                    </span>
                   </div>
                 ))}
               </div>
@@ -97,80 +107,109 @@ const Enterprise = () => {
               className="bg-sky-800 flex items-center text-white font-thin rounded mb- py-2 cursor-pointer hover:bg-sky-950 group"
               onClick={() => setTgtToggle(!tgtToggle)}
             >
-              <HiChevronDown className="ml-6 text-xl" />
+              <HiChevronDown className="ml-2 text-xl" />
               {/* Tootip */}
               <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 bg-sky-800 text-white text-sm text-center rounded shadow-xl absolute bottom- left-1 px-2 py-5 rotate  w-28 h-48">
                 Enterprise Initiatives related to Target's commitments to
                 sustainability and inclusivity
               </span>
 
-              <h3 className="ml-[430px]">Target Forward</h3>
+              <h3 className="ml-[450px]">Target Forward</h3>
             </div>
 
             {tgtToggle ? (
               <div className="flex flex-col gap-1">
                 {/* ==================== ALWAYS ON = */}
-                <div className="shadow h-[170px] flex relative">
-                  <span
-                    className="vertical text-[13px] text-white bg-cyan-600 hover:bg-sky-950 text-center font-semibold p-2 py-3  rounded-tr-md rounded-br-md cursor-pointer group"
-                    onClick={() => setTgtToggle(true)}
-                  >
-                    Always On
-                  </span>
 
-                  {data?.ALWAYS?.map((item, index) => (
+                {alwaysToggle ? (
+                  <div
+                    className="bg-cyan-600 flex items-center text-white font-thin rounded text-center mb-1 py-1 cursor-pointer hover:bg-cyan-800 group"
+                    onClick={() => setAlwaysToggle(!alwaysToggle)}
+                  >
+                    <HiChevronDown className="ml-2 text-xl" />
+
+                    <h3 className="ml-[465px] font-medium">Always On</h3>
+                  </div>
+                ) : (
+                  <div className="shadow h-[170px] flex relative">
                     <div
-                      key={item.id}
-                      className="absolute bg-blue-400"
-                      onClick={() => {
-                        setVariable("ALWAYS");
-                        setDataIndexEnterprise(index);
-                        setModalAlways(!modalAlways);
-                      }}
+                      className="vertical text-[13px] text-white flex bg-cyan-600 hover:bg-cyan-800 text-center font-semibold p-2 py-3  rounded-tr-md rounded-br-md cursor-pointer group"
+                      onClick={() => setAlwaysToggle(true)}
                     >
-                      <OwnedBrandRollover
-                        width={item?.width}
-                        height="37px"
-                        left={item.left}
-                        top={item?.top}
-                        text={item.label}
-                        backgroundColor={item.color}
-                        image={item.image}
-                      />
+                      <span className="pt-8">Always On</span>
+                      <HiChevronDown className="mt-7 text-xl" />
                     </div>
-                  ))}
-                </div>
+
+                    {data?.ALWAYS?.map((item, index) => (
+                      <div
+                        key={item.id}
+                        className="absolute bg-blue-400"
+                        onClick={() => {
+                          setVariable("ALWAYS");
+                          setDataIndexEnterprise(index);
+                          setModalAlways(!modalAlways);
+                        }}
+                      >
+                        <OwnedBrandRollover
+                          width={item?.width}
+                          height="37px"
+                          left={item.left}
+                          top={item?.top}
+                          text={item.label}
+                          backgroundColor={item.color}
+                          image={item.image}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                )}
 
                 {/* ==================== MOMENTS = */}
-                <div className="shadow h-[170px] flex relative">
-                  <span
-                    className="vertical text-[13px] text-white bg-cyan-500 hover:bg-sky-950 text-center font-semibold p-2 py-3  rounded-tr-md rounded-br-md cursor-pointer group"
-                    onClick={() => setTgtToggle(true)}
+                {momentsToggle ? (
+                  <div
+                    className="bg-cyan-500 flex items-center text-white font-thin rounded text-center mb-1 py-1 cursor-pointer hover:bg-cyan-800 group"
+                    onClick={() => setMomentsToggle(!momentsToggle)}
                   >
-                    Moments
-                  </span>
+                    <HiChevronDown className="ml-2 text-xl" />
 
-                  {data?.MOMENTS?.map((item, index) => (
+                    <h3 className="ml-[465px] font-medium">Moments</h3>
+                  </div>
+                ) : (
+                  <div className="shadow h-[170px] flex relative">
                     <div
-                      key={item.id}
-                      className="absolute bg-blue-400"
-                      onClick={() => {
-                        setVariable("MOMENTS");
-                        setDataIndexEnterprise(index);
-                        setModal(!modal);
-                      }}
+                      className="vertical text-[13px] text-white flex bg-cyan-500 hover:bg-cyan-800 text-center font-semibold p-2 py-3  rounded-tr-md rounded-br-md cursor-pointer group"
+                      onClick={() => setMomentsToggle(true)}
                     >
-                      <EnterpriseRollover
-                        width={item?.width}
-                        height="40px"
-                        left={item?.left}
-                        top={item.top}
-                        text={item.label}
-                        backgroundColor={item.color}
-                      />
+                      <span className="pt-9">Moments</span>
+                      <HiChevronDown className="mt-8 text-xl" />
                     </div>
-                  ))}
-                </div>
+
+                    {data?.MOMENTS?.map((item, index) => (
+                      <div
+                        key={item.id}
+                        className="absolute bg-blue-400 group"
+                        onClick={() => {
+                          setVariable("MOMENTS");
+                          setDataIndexEnterprise(index);
+                          setModal(!modal);
+                        }}
+                      >
+                        <EnterpriseRollover
+                          width={item?.width}
+                          height="40px"
+                          left={item?.left}
+                          top={item.top}
+                          text={item.label}
+                          backgroundColor={item.color}
+                        />
+
+                        <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 text-[14px] text-center text-gray-500 rounded shadow-xl p-1 w-32 h-8 absolute top-32 left-[490px] bg-cyan-200 ">
+                          Click for Details
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             ) : null}
 
@@ -179,13 +218,13 @@ const Enterprise = () => {
               className="bg-sky-700 flex items-center text-white font-thin rounded text-center mb-1 py-2 cursor-pointer hover:bg-sky-950 group"
               onClick={() => setStrategicToggle(!strategicToggle)}
             >
-              <HiChevronDown className="ml-6 text-xl" />
+              <HiChevronDown className="ml-2 text-xl" />
               {/* Tootip */}
               <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 bg-sky-700 text-white text-sm rounded shadow-xl absolute bottom- left-1 px-2 py-5 rotate  w-28 h-48">
                 Key external Partnerships that expand & enhance Target's
                 presence
               </span>
-              <h3 className="ml-[420px]">Strategic Partnerships</h3>
+              <h3 className="ml-[430px]">Strategic Partnerships</h3>
             </div>
 
             {strategicToggle ? (
@@ -196,16 +235,18 @@ const Enterprise = () => {
                     className="bg-sky-600 flex items-center text-white font-thin rounded text-center mt-[-3px] py-1 cursor-pointer hover:bg-sky-800 group"
                     onClick={() => setDisneyToggle(false)}
                   >
-                    <h3 className="ml-[502px] font-medium ">Disney</h3>
+                    <HiChevronDown className="ml-2 text-xl" />
+                    <h3 className="ml-[475px] font-medium ">Disney</h3>
                   </div>
                 ) : (
                   <div className="shadow h-[160px] flex mt-[-3px]">
-                    <span
-                      className="vertical text-[13px] text-white bg-sky-600 hover:bg-sky-800 text-center font-semibold p-2 py-3 rounded-tr-md rounded-br-md cursor-pointer "
+                    <div
+                      className="vertical text-[13px] flex items-center text-white bg-sky-600 hover:bg-sky-800 text-center font-semibold p-2 py-3 rounded-tr-md rounded-br-md cursor-pointer "
                       onClick={() => setDisneyToggle(true)}
                     >
-                      Disney
-                    </span>
+                      <span className="pt-10">Disney</span>
+                      <HiChevronDown className="text-xl mt-8" />
+                    </div>
 
                     {data?.DISNEY?.map((item, index) => (
                       <div
@@ -237,16 +278,18 @@ const Enterprise = () => {
                     className="bg-sky-500 flex items-center text-white font-thin rounded text-center py-1 cursor-pointer hover:bg-sky-800 group"
                     onClick={() => setAppleToggle(false)}
                   >
-                    <h3 className="ml-[506px] font-medium ">Apple</h3>
+                    <HiChevronDown className="ml-2 text-xl" />
+                    <h3 className="ml-[479px] font-medium ">Apple</h3>
                   </div>
                 ) : (
                   <div className="shadow h-[160px] flex ">
-                    <span
-                      className="vertical text-[13px] text-white bg-sky-500 hover:bg-sky-800 text-center font-semibold p-2 py-3 rounded-tr-md rounded-br-md cursor-pointer "
+                    <div
+                      className="vertical text-[13px] flex text-white bg-sky-500 hover:bg-sky-800 text-center font-semibold p-2 py-3 rounded-tr-md rounded-br-md cursor-pointer "
                       onClick={() => setAppleToggle(true)}
                     >
-                      Apple
-                    </span>
+                      <span className="pt-10">Apple</span>
+                      <HiChevronDown className="text-xl mt-8" />
+                    </div>
 
                     {data?.APPLE?.map((item, index) => (
                       <div
@@ -278,16 +321,18 @@ const Enterprise = () => {
                     className="bg-sky-400 flex items-center text-white font-thin rounded text-center py-1 cursor-pointer hover:bg-sky-800 group"
                     onClick={() => setLevisToggle(false)}
                   >
-                    <h3 className="ml-[509px] font-medium ">Levi's</h3>
+                    <HiChevronDown className="ml-2 text-xl" />
+                    <h3 className="ml-[482px] font-medium ">Levi's</h3>
                   </div>
                 ) : (
                   <div className="shadow h-[160px] flex ">
-                    <span
-                      className="vertical text-[13px] text-white bg-sky-400 hover:bg-sky-800 text-center font-semibold p-2 py-3 rounded-tr-md rounded-br-md cursor-pointer "
+                    <div
+                      className="vertical text-[13px] flex text-white bg-sky-400 hover:bg-sky-800 text-center font-semibold p-2 py-3 rounded-tr-md rounded-br-md cursor-pointer "
                       onClick={() => setLevisToggle(true)}
                     >
-                      Levi's
-                    </span>
+                      <span className="pt-11">Levi's</span>
+                      <HiChevronDown className="text-xl mt-8" />
+                    </div>
 
                     {data?.LEVI?.map((item, index) => (
                       <div
@@ -319,16 +364,18 @@ const Enterprise = () => {
                     className="bg-sky-300 flex items-center text-white font-thin rounded text-center py-1 cursor-pointer hover:bg-sky-800 group"
                     onClick={() => setUltaToggle(false)}
                   >
-                    <h3 className="ml-[488px] font-medium ">Ulta Beauty</h3>
+                    <HiChevronDown className="ml-2 text-xl" />
+                    <h3 className="ml-[462px] font-medium ">Ulta Beauty</h3>
                   </div>
                 ) : (
                   <div className="shadow h-[160px] flex ">
-                    <span
-                      className="vertical text-[13px] text-white bg-sky-300 hover:bg-sky-800 text-center font-semibold p-2 py-3 rounded-tr-md rounded-br-md cursor-pointer "
+                    <div
+                      className="vertical text-[13px] flex text-white bg-sky-300 hover:bg-sky-800 text-center font-semibold p-2 py-3 rounded-tr-md rounded-br-md cursor-pointer "
                       onClick={() => setUltaToggle(true)}
                     >
-                      Ulta Beauty
-                    </span>
+                      <span className="pt-7">Ulta Beauty</span>
+                      <HiChevronDown className="text-xl mt-4" />
+                    </div>
 
                     {data?.ULTA?.map((item, index) => (
                       <div
@@ -360,16 +407,20 @@ const Enterprise = () => {
                     className="bg-sky-200 flex items-center text-white font-thin rounded text-center py-1 cursor-pointer hover:bg-sky-800 group"
                     onClick={() => setNationalToggle(false)}
                   >
-                    <h3 className="ml-[451px] font-medium ">National Brand Launch</h3>
+                    <HiChevronDown className="ml-2 text-xl" />
+                    <h3 className="ml-[425px] font-medium ">
+                      National Brand Launch
+                    </h3>
                   </div>
                 ) : (
-                  <div className="shadow h-[160px] flex ">
-                    <span
-                      className="vertical text-[13px] text-white bg-sky-200 hover:bg-sky-800 text-center font-semibold p-2 py-3 rounded-tr-md rounded-br-md cursor-pointer "
+                  <div className="shadow h-[170px] flex ">
+                    <div
+                      className="vertical text-[13px] flex text-white bg-sky-200 hover:bg-sky-800 text-center font-semibold p-2 py-3 rounded-tr-md rounded-br-md cursor-pointer "
                       onClick={() => setNationalToggle(true)}
                     >
-                      Nat's Brand Launch
-                    </span>
+                      <span className="mt-">Nat's Brand Launch</span>
+                      <HiChevronDown className="text-xl mt-3" />
+                    </div>
 
                     {data?.NATIONAL?.map((item, index) => (
                       <div
