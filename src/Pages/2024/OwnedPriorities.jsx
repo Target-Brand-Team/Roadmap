@@ -331,7 +331,7 @@ const OwnedPriorities = () => {
                             </span>
                             <dd className="mt-1 leading-6 text-gray-700 ">
                               <div className="flex gap-2">
-                                <span className="font-semibold ml-2">
+                                <span className="font-semibold ml-[-6px] ">
                                   Primary:{" "}
                                 </span>
                                 {
@@ -363,7 +363,7 @@ const OwnedPriorities = () => {
                             <dt className="font-semibold leading-6 text-gray-900">
                               What's happening with the Brand:
                             </dt>
-                            <dd className="mt-1 ml-2 leading-6 text-gray-500 ">
+                            <dd className="mt-1 ml-[-6px] leading-6 text-gray-500 ">
                               {
                                 ownedData[ownedVariable][dataIndexOwnedBrand]
                                   ?.what_happen
