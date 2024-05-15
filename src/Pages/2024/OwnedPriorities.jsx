@@ -21,7 +21,10 @@ const OwnedPriorities = () => {
 
   return (
     <>
-      <div className="bg-green-950 hover:bg-green-900 text-white text-lg font rounded text-center mb-[-6px] mt-[-3px] py-2 flex items-center group cursor-pointer">
+      <div
+        className="bg-green-950 hover:bg-green-900 text-white text-lg font rounded text-center mb-[-6px] mt-[-3px] py-2 flex items-center group cursor-pointer"
+        onClick={() => setMainBarToggle(!mainBarToggle)}
+      >
         {/* Tootip */}
         <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 bg-green-950 text-white text-sm font-thin rounded shadow-xl absolute bottom- left-1 px-2 py-5 rotate w-28 h-48">
           In-market dates for key newness across the OB Portfolio.
@@ -29,15 +32,9 @@ const OwnedPriorities = () => {
 
         <h3 className="ml-[440px]">Owned Brand Priorities</h3>
         {mainBarToggle ? (
-          <FaMinus
-            className="ml-[400px] cursor-pointer text-[16px]"
-            onClick={() => setMainBarToggle(!mainBarToggle)}
-          />
+          <FaMinus className="ml-[400px] cursor-pointer text-[16px]" />
         ) : (
-          <FaPlus
-            className="ml-[400px] cursor-pointer text-[16px]"
-            onClick={() => setMainBarToggle(!mainBarToggle)}
-          />
+          <FaPlus className="ml-[400px] cursor-pointer text-[16px]" />
         )}
       </div>
 
@@ -294,13 +291,13 @@ const OwnedPriorities = () => {
             )}
           </section>
 
-          {/* === MODAL =============================== */}
+          {/* ================================= MODAL ==== */}
           {modal ? (
             //  === FADE ===
-            <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+            <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center z-50">
               <d
                 iv
-                className="bg-white w-[900px] h-[650px] p-1 rounded-lg shadow-xl mt-14"
+                className="bg-white w-[950px] h-[600px] p-1 rounded-lg shadow-xl mt-14"
               >
                 <div className="flex justify-end">
                   <IoClose
@@ -328,13 +325,13 @@ const OwnedPriorities = () => {
                       </div>
                       <div className="mt-5 border-t border-gray-100">
                         <dl className="divide-y divide-gray-100">
-                          <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-24 sm:px-0">
+                          <div className="px-4 py-1 sm:grid sm:grid-cols-3 sm:gap-24 sm:px-0">
                             <span className=" font-semibold leading-6 text-gray-900">
                               Pyramids:
                             </span>
                             <dd className="mt-1 leading-6 text-gray-700 ">
                               <div className="flex gap-2">
-                                <span className="font-semibold ml-2">
+                                <span className="font-semibold ml-[-6px] ">
                                   Primary:{" "}
                                 </span>
                                 {
@@ -351,7 +348,7 @@ const OwnedPriorities = () => {
                               </div>
                             </dd>
                           </div>
-                          <div className="px-4 py-5 flex gap-[280px] sm:px-0">
+                          <div className="px-4 py-3 flex gap-[280px] sm:px-0">
                             <dt className="font-semibold leading-6 text-gray-900">
                               Goal:
                             </dt>
@@ -366,7 +363,7 @@ const OwnedPriorities = () => {
                             <dt className="font-semibold leading-6 text-gray-900">
                               What's happening with the Brand:
                             </dt>
-                            <dd className="mt-1 ml-2 leading-6 text-gray-500 ">
+                            <dd className="mt-1 ml-[-6px] leading-6 text-gray-500 ">
                               {
                                 ownedData[ownedVariable][dataIndexOwnedBrand]
                                   ?.what_happen

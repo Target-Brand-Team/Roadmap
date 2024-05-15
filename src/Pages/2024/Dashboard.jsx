@@ -13,7 +13,7 @@ const Dashboard = () => {
   const [showOwned, setShowOwned] = useState(false);
 
   return (
-    <div className="flex flex-col gap-2 mt-1 mx-1 h-[3800px] max-[1280px]:w-[1050px]">
+    <div className="flex flex-col gap-2 mt-1 mx-1 h-[3500px] max-[1280px]:w-[1050px]">
       <div className="bg-red-600 text-white rounded-sm py-1 px-3 font-bold text-lg flex justify-center">
         2024
       </div>
@@ -29,13 +29,15 @@ const Dashboard = () => {
       <Calendar />
 
       {showCultural ? (
-        <Cultural /> 
+        <Cultural />
       ) : (
         <div
-          className="bg-targetYellow text-white rounded text-center text-lg mb-1 py-2 cursor-pointer"
+          className="bg-targetYellow hover:bg-yellow-600 flex items-center text-white rounded text-center text-lg mb-1 py-2 cursor-pointer group"
           onClick={() => setShowCultural(!showCultural)}
         >
-          <h3 className="">Cultural Context</h3>
+          <h3 className="ml-[461px]">Cultural Context</h3>
+
+          <FaPlus className="ml-[433px] cursor-pointer text-[16px]" />
         </div>
       )}
 
@@ -43,16 +45,22 @@ const Dashboard = () => {
         <Enterprise />
       ) : (
         <div
-          className="bg-sky-950 text-white rounded text-center text-lg mt-[-7px] py-2"
+          className="bg-sky-950 hover:bg-cyan-900 flex items-center text-white rounded text-center text-lg mt-[-7px] py-2 cursor-pointer"
           onClick={() => setShow(!show)}
         >
-          <h3>Enterprise Priorities</h3>
+          <h3 className="ml-[448px]">Enterprise Priorities</h3>
+          <FaPlus className="ml-[420px] cursor-pointer text-[16px]" />
         </div>
       )}
 
       {showOwned ? (
-        <div className="bg-green-950 text-white text-lg font rounded text-center mt-[-3px] py-2">
-          <h3 className="ml-3">Owned Brand Priorities</h3>
+        <div
+          className="bg-green-950 hover:bg-green-900 text-white text-lg font rounded text-center mb-[-6px] mt-[-3px] py-2 flex items-center group cursor-pointer"
+          onClick={() => setShowOwned(!showOwned)}
+        >
+          <h3 className="ml-[440px]">Owned Brand Priorities</h3>
+
+          <FaPlus className="ml-[400px] cursor-pointer text-[16px]" />
         </div>
       ) : (
         <OwnedPriorities />
