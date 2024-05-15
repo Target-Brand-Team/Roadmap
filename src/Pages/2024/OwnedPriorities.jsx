@@ -21,7 +21,10 @@ const OwnedPriorities = () => {
 
   return (
     <>
-      <div className="bg-green-950 hover:bg-green-900 text-white text-lg font rounded text-center mb-[-6px] mt-[-3px] py-2 flex items-center group cursor-pointer">
+      <div
+        className="bg-green-950 hover:bg-green-900 text-white text-lg font rounded text-center mb-[-6px] mt-[-3px] py-2 flex items-center group cursor-pointer"
+        onClick={() => setMainBarToggle(!mainBarToggle)}
+      >
         {/* Tootip */}
         <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 bg-green-950 text-white text-sm font-thin rounded shadow-xl absolute bottom- left-1 px-2 py-5 rotate w-28 h-48">
           In-market dates for key newness across the OB Portfolio.
@@ -29,15 +32,9 @@ const OwnedPriorities = () => {
 
         <h3 className="ml-[440px]">Owned Brand Priorities</h3>
         {mainBarToggle ? (
-          <FaMinus
-            className="ml-[400px] cursor-pointer text-[16px]"
-            onClick={() => setMainBarToggle(!mainBarToggle)}
-          />
+          <FaMinus className="ml-[400px] cursor-pointer text-[16px]" />
         ) : (
-          <FaPlus
-            className="ml-[400px] cursor-pointer text-[16px]"
-            onClick={() => setMainBarToggle(!mainBarToggle)}
-          />
+          <FaPlus className="ml-[400px] cursor-pointer text-[16px]" />
         )}
       </div>
 

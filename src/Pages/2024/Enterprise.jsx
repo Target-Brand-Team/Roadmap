@@ -50,7 +50,6 @@ const Enterprise = () => {
         <div className="bg-white flex">
           <section className="w-full flex flex-col gap-1">
             {/* ====================================== ENTERPRISE LTO === */}
-
             <div
               className="bg-sky-900 flex items-center text-white font-thin rounded text-center py-2 mt-1 cursor-pointer hover:bg-sky-950 group"
               onClick={() => setLtoToggle(!ltoToggle)}
@@ -101,7 +100,7 @@ const Enterprise = () => {
               </div>
             ) : null}
 
-            {/* ============================== ENTERPRISE TGT === */}
+            {/* ====================================== TARGET FORWARD === */}
 
             <div
               className="bg-sky-800 flex items-center text-white font-thin rounded mb- py-2 cursor-pointer hover:bg-sky-950 group"
@@ -119,8 +118,7 @@ const Enterprise = () => {
 
             {tgtToggle ? (
               <div className="flex flex-col gap-1">
-                {/* ==================== ALWAYS ON = */}
-
+                {/* ============================ ALWAYS ON = */}
                 {alwaysToggle ? (
                   <div
                     className="bg-cyan-600 flex items-center text-white font-thin rounded text-center mb-1 py-1 cursor-pointer hover:bg-cyan-800 group"
@@ -136,8 +134,8 @@ const Enterprise = () => {
                       className="vertical text-[13px] text-white flex bg-cyan-600 hover:bg-cyan-800 text-center font-semibold p-2 py-3  rounded-tr-md rounded-br-md cursor-pointer group"
                       onClick={() => setAlwaysToggle(true)}
                     >
-                      <span className="pt-8">Always On</span>
-                      <HiChevronDown className="mt-7 text-xl" />
+                      <span className="mt-8">Always On</span>
+                      <HiChevronDown className="mt-6 text-xl" />
                     </div>
 
                     {data?.ALWAYS?.map((item, index) => (
@@ -164,7 +162,7 @@ const Enterprise = () => {
                   </div>
                 )}
 
-                {/* ==================== MOMENTS = */}
+                {/* ================================ MOMENTS = */}
                 {momentsToggle ? (
                   <div
                     className="bg-cyan-500 flex items-center text-white font-thin rounded text-center mb-1 py-1 cursor-pointer hover:bg-cyan-800 group"
@@ -251,7 +249,7 @@ const Enterprise = () => {
                     {data?.DISNEY?.map((item, index) => (
                       <div
                         key={item.id}
-                        className="absolute"
+                        className="absolute group"
                         onClick={() => {
                           setVariable("DISNEY");
                           setDataIndexEnterprise(index);
@@ -267,6 +265,10 @@ const Enterprise = () => {
                           text={item.label}
                           backgroundColor={item.color}
                         />
+
+                        <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 text-[14px] text-center text-gray-500 rounded shadow-xl p-1 w-32 h-8 absolute top-[120px] left-[490px] bg-cyan-200 ">
+                          Click for Details
+                        </span>
                       </div>
                     ))}
                   </div>
@@ -294,7 +296,7 @@ const Enterprise = () => {
                     {data?.APPLE?.map((item, index) => (
                       <div
                         key={item.id}
-                        className="absolute"
+                        className="absolute group"
                         onClick={() => {
                           setVariable("APPLE");
                           setDataIndexEnterprise(index);
@@ -310,6 +312,10 @@ const Enterprise = () => {
                           text={item.label}
                           backgroundColor={item.color}
                         />
+
+                        <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 text-[14px] text-center text-gray-500 rounded shadow-xl p-1 w-32 h-8 absolute top-[120px] left-[490px] bg-cyan-200 ">
+                          Click for Details
+                        </span>
                       </div>
                     ))}
                   </div>
@@ -337,7 +343,7 @@ const Enterprise = () => {
                     {data?.LEVI?.map((item, index) => (
                       <div
                         key={item.id}
-                        className="absolute"
+                        className="absolute group"
                         onClick={() => {
                           setVariable("LEVI");
                           setDataIndexEnterprise(index);
@@ -353,6 +359,10 @@ const Enterprise = () => {
                           text={item.label}
                           backgroundColor={item.color}
                         />
+
+                        <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 text-[14px] text-center text-gray-500 rounded shadow-xl p-1 w-32 h-8 absolute top-[120px] left-[490px] bg-cyan-200 ">
+                          Click for Details
+                        </span>
                       </div>
                     ))}
                   </div>
@@ -373,14 +383,14 @@ const Enterprise = () => {
                       className="vertical text-[13px] flex text-white bg-sky-300 hover:bg-sky-800 text-center font-semibold p-2 py-3 rounded-tr-md rounded-br-md cursor-pointer "
                       onClick={() => setUltaToggle(true)}
                     >
-                      <span className="pt-7">Ulta Beauty</span>
+                      <span className="pt-6">Ulta Beauty</span>
                       <HiChevronDown className="text-xl mt-4" />
                     </div>
 
                     {data?.ULTA?.map((item, index) => (
                       <div
                         key={item.id}
-                        className="absolute"
+                        className="absolute group"
                         onClick={() => {
                           setVariable("ULTA");
                           setDataIndexEnterprise(index);
@@ -396,6 +406,10 @@ const Enterprise = () => {
                           text={item.label}
                           backgroundColor={item.color}
                         />
+
+                        <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 text-[14px] text-center text-gray-500 rounded shadow-xl p-1 w-32 h-8 absolute top-[120px] left-[490px] bg-cyan-200 ">
+                          Click for Details
+                        </span>
                       </div>
                     ))}
                   </div>
@@ -413,19 +427,19 @@ const Enterprise = () => {
                     </h3>
                   </div>
                 ) : (
-                  <div className="shadow h-[170px] flex ">
+                  <div className="shadow h-[175px] flex ">
                     <div
                       className="vertical text-[13px] flex text-white bg-sky-200 hover:bg-sky-800 text-center font-semibold p-2 py-3 rounded-tr-md rounded-br-md cursor-pointer "
                       onClick={() => setNationalToggle(true)}
                     >
                       <span className="mt-">Nat's Brand Launch</span>
-                      <HiChevronDown className="text-xl mt-3" />
+                      <HiChevronDown className="text-xl mt-1" />
                     </div>
 
                     {data?.NATIONAL?.map((item, index) => (
                       <div
                         key={item.id}
-                        className="absolute"
+                        className="absolute group"
                         onClick={() => {
                           setVariable("NATIONAL");
                           setDataIndexEnterprise(index);
@@ -441,6 +455,10 @@ const Enterprise = () => {
                           text={item.label}
                           backgroundColor={item.color}
                         />
+
+                        <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 text-[14px] text-center text-gray-500 rounded shadow-xl p-1 w-32 h-8 absolute top-[120px] left-[490px] bg-cyan-200 ">
+                          Click for Details
+                        </span>
                       </div>
                     ))}
                   </div>
