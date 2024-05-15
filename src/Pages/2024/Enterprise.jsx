@@ -472,7 +472,7 @@ const Enterprise = () => {
 
       {/* ================================== MODAL ENTERPRISE === */}
       {modal ? (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center z-50">
           <div className="bg-white w-[900px] h-[400px] p-1 rounded-lg shadow-xl mt-14">
             <div className="flex justify-end">
               <IoClose
@@ -543,7 +543,7 @@ const Enterprise = () => {
 
       {/* ================================== MODAL ALWAYS ON === */}
       {modalAlways ? (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center z-50">
           <div className="bg-white w-[900px] h-[350px] p-1 rounded-lg shadow-xl mt-14">
             <div className="flex justify-end">
               <IoClose

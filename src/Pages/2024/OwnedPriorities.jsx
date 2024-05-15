@@ -294,7 +294,7 @@ const OwnedPriorities = () => {
           {/* ================================= MODAL ==== */}
           {modal ? (
             //  === FADE ===
-            <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-cente z-50">
+            <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center z-50">
               <d
                 iv
                 className="bg-white w-[950px] h-[600px] p-1 rounded-lg shadow-xl mt-14"
