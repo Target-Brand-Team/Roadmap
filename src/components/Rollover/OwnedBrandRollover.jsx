@@ -8,6 +8,7 @@ const OwnedBrandRollover = ({
   image,
   left,
   top,
+  text2,
 }) => {
   const imageStyle = {
     backgroundColor,
@@ -16,6 +17,7 @@ const OwnedBrandRollover = ({
     height,
     borderRadius: "25px",
     text: text,
+    text2: text2,
     left: left,
     top: top,
     position: "absolute",

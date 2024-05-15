@@ -71,12 +71,12 @@ export const OWNED_BRAND_DATA = {
     {
       id: 3,
       key: "03",
-      label: "Stars & Above",
       width: 100,
       left: 445,
       top: 70,
       color: "#9ca3af",
       image: starsAbove,
+      label: "(Exiting)",
       pyramid: {
         primary: "A&A",
         secondary: "N/A",
@@ -182,10 +182,10 @@ export const OWNED_BRAND_DATA = {
         primary: "F&B",
         secondary: "N/A",
       },
-      goal: "Continuing to drive the celebration of food into the Spring/Summer Seasons",
+      goal: "Continuing to drive the celebration of food into the Holiday Seasons",
       what_happen: "Grow & Maintain",
       description:
-        "Introduce newness and innovation going into the Spring/Summer seasons with FD Italian Ice Pops, Freeze Pops, Spring Aerosols",
+        "Introduce newness and innovation going into the Harvest/Holiday seasons",
       when: "Launches Q3 '24 - Final Launch through Q4 '24",
     },
     {
