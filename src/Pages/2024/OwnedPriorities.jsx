@@ -291,13 +291,13 @@ const OwnedPriorities = () => {
             )}
           </section>
 
-          {/* === MODAL =============================== */}
+          {/* ================================= MODAL ==== */}
           {modal ? (
             //  === FADE ===
-            <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+            <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-cente z-50">
               <d
                 iv
-                className="bg-white w-[900px] h-[650px] p-1 rounded-lg shadow-xl mt-14"
+                className="bg-white w-[950px] h-[600px] p-1 rounded-lg shadow-xl mt-14"
               >
                 <div className="flex justify-end">
                   <IoClose
@@ -325,7 +325,7 @@ const OwnedPriorities = () => {
                       </div>
                       <div className="mt-5 border-t border-gray-100">
                         <dl className="divide-y divide-gray-100">
-                          <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-24 sm:px-0">
+                          <div className="px-4 py-1 sm:grid sm:grid-cols-3 sm:gap-24 sm:px-0">
                             <span className=" font-semibold leading-6 text-gray-900">
                               Pyramids:
                             </span>
@@ -348,7 +348,7 @@ const OwnedPriorities = () => {
                               </div>
                             </dd>
                           </div>
-                          <div className="px-4 py-5 flex gap-[280px] sm:px-0">
+                          <div className="px-4 py-3 flex gap-[280px] sm:px-0">
                             <dt className="font-semibold leading-6 text-gray-900">
                               Goal:
                             </dt>

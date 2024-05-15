@@ -8,6 +8,7 @@ import { HiChevronDown } from "react-icons/hi2";
 import { FaPlus } from "react-icons/fa6";
 import { FaMinus } from "react-icons/fa6";
 
+
 const Enterprise = () => {
   const [data, setData] = useState(ENTERPRISE_PRIORITIES);
   const [modal, setModal] = useState(false);
