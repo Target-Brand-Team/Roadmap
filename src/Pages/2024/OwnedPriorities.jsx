@@ -1,29 +1,39 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { OWNED_BRAND_DATA } from "../../Database_2024/2024/OwnedBrandData";
 import OwnedBrandRollover from "../../components/Rollover/OwnedBrandRollover";
 import { IoClose } from "react-icons/io5";
 import { HiChevronDown } from "react-icons/hi2";
 import { FaPlus } from "react-icons/fa6";
 import { FaMinus } from "react-icons/fa6";
+import { ToggleContext } from "../../components/CONTEXT/ToggleContextPage";
 
 const OwnedPriorities = () => {
+  const {
+    priorityToggle,
+    setPriorityToggle,
+    accessoriesToggle,
+    setAccessoriesToggle,
+    essentialToggle,
+    setEssentialToggle,
+    foodToggle,
+    setFoodToggle,
+    hardlinesToggle,
+    setHardlinesToggle,
+    homeToggle,
+    setHomeToggle,
+    topBarToggle,
+    setTopBarToggle,
+  } = useContext(ToggleContext);
   const [ownedData, setownedData] = useState(OWNED_BRAND_DATA);
   const [dataIndexOwnedBrand, setDataIndexOwnedBrand] = useState(null);
   const [ownedVariable, setOwnedVariable] = useState("");
   const [modal, setModal] = useState(false);
-  const [priorityToggle, setPriorityToggle] = useState(false);
-  const [accessoriesToggle, setAccessoriesToggle] = useState(false);
-  const [essentialToggle, setEssentialToggle] = useState(false);
-  const [foodToggle, setFoodToggle] = useState(false);
-  const [hardlinesToggle, setHardlinesToggle] = useState(false);
-  const [homeToggle, setHomeToggle] = useState(false);
-  const [mainBarToggle, setMainBarToggle] = useState(true);
 
   return (
     <>
       <div
         className="bg-green-950 hover:bg-green-900 text-white text-lg font rounded text-center mb-[-6px] mt-[-3px] py-2 flex items-center group cursor-pointer"
-        onClick={() => setMainBarToggle(!mainBarToggle)}
+        onClick={() => setTopBarToggle(!topBarToggle)}
       >
         {/* Tootip */}
         <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 bg-green-950 text-white text-sm font-thin rounded shadow-xl absolute bottom- left-1 px-2 py-5 rotate w-28 h-48">
@@ -31,14 +41,14 @@ const OwnedPriorities = () => {
         </span>
 
         <h3 className="ml-[440px]">Owned Brand Priorities</h3>
-        {mainBarToggle ? (
+        {topBarToggle ? (
           <FaMinus className="ml-[400px] cursor-pointer text-[16px]" />
         ) : (
           <FaPlus className="ml-[400px] cursor-pointer text-[16px]" />
         )}
       </div>
 
-      {mainBarToggle ? (
+      {topBarToggle ? (
         <div className="bg-white h-[1500px] w-full flex mb-10">
           <section className="w-full flex flex-col gap-1">
             {/* ===================================== PORTFOLIO PRIORITIES */}

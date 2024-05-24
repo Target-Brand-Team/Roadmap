@@ -1,31 +1,44 @@
 import React from "react";
 import EnterpriseRollover from "../../components/Rollover/EnterpriseRollover";
 import OwnedBrandRollover from "../../components/Rollover/OwnedBrandRollover";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { ENTERPRISE_PRIORITIES } from "../../Database_2024/2024/Enterprise_Priori_Data";
 import { IoClose } from "react-icons/io5";
 import { HiChevronDown } from "react-icons/hi2";
 import { FaPlus } from "react-icons/fa6";
 import { FaMinus } from "react-icons/fa6";
-
+import { ToggleContext } from "../../components/CONTEXT/ToggleContextPage";
 
 const Enterprise = () => {
+  const {
+    mainBarToggle, setMainBarToggle,
+    tgtToggle,
+    setTgtToggle,
+    ltoToggle,
+    setLtoToggle,
+    strategicToggle,
+    setStrategicToggle,
+    disneyToggle,
+    setDisneyToggle,
+    appleToggle,
+    setAppleToggle,
+    levisToggle,
+    setLevisToggle,
+    ultaToggle,
+    setUltaToggle,
+    nationalToggle,
+    setNationalToggle,
+    momentsToggle,
+    setMomentsToggle,
+    alwaysToggle,
+    setAlwaysToggle,
+  } = useContext(ToggleContext);
   const [data, setData] = useState(ENTERPRISE_PRIORITIES);
   const [modal, setModal] = useState(false);
   const [modalAlways, setModalAlways] = useState(false);
   const [dataIndexEnterprise, setDataIndexEnterprise] = useState(null);
   const [variable, setVariable] = useState("");
-  const [tgtToggle, setTgtToggle] = useState(false);
-  const [ltoToggle, setLtoToggle] = useState(false);
-  const [strategicToggle, setStrategicToggle] = useState(false);
-  const [mainBarToggle, setMainBarToggle] = useState(true);
-  const [disneyToggle, setDisneyToggle] = useState(false);
-  const [appleToggle, setAppleToggle] = useState(false);
-  const [levisToggle, setLevisToggle] = useState(false);
-  const [ultaToggle, setUltaToggle] = useState(false);
-  const [nationalToggle, setNationalToggle] = useState(false);
-  const [alwaysToggle, setAlwaysToggle] = useState(false);
-  const [momentsToggle, setMomentsToggle] = useState(false);
+  
 
   return (
     <main className="flex flex-col w-full mt-[-7px]">
@@ -132,7 +145,7 @@ const Enterprise = () => {
                 ) : (
                   <div className="shadow h-[170px] flex relative">
                     <div
-                      className="vertical text-[13px] text-white flex bg-cyan-600 hover:bg-cyan-800 text-center font-semibold p-2 py-3  rounded-tr-md rounded-br-md cursor-pointer group"
+                      className="vertical text-[13px] text-white flex bg-cyan-600 hover:bg-cyan-800 text-c enter font-semibold p-2 py-3  rounded-tr-md rounded-br-md cursor-pointer group"
                       onClick={() => setAlwaysToggle(true)}
                     >
                       <span className="mt-8">Always On</span>
