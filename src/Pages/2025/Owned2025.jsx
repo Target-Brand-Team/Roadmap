@@ -25,8 +25,9 @@ const [ownedData, setownedData] = useState(OWNED_BRAND_DATA_2025);
           </h3>
           <div className="bg-white h-[1500px] w-full flex mb-10">
             <section className="w-full flex flex-col gap-1">
+
               {/* ===================================== PORTFOLIO PRIORITIES */}
-              {priorityToggle ? (
+              {/* {priorityToggle ? (
                 <div
                   className="bg-green-900 flex items-center text-white hover:bg-green-950 text-th font-thin rounded text-center py-2 cursor-pointer"
                   onClick={() => setPriorityToggle(false)}
@@ -42,7 +43,7 @@ const [ownedData, setownedData] = useState(OWNED_BRAND_DATA_2025);
                   >
                     Portfolio Priorities
                   </span>
-                  {/* {ownedData?.map((item) => (
+                  {ownedData?.map((item) => (
                  <div key={item.id} className="absolute">
                  <OwnedBrandRollover 
                  width={item?.width}
@@ -54,9 +55,9 @@ const [ownedData, setownedData] = useState(OWNED_BRAND_DATA_2025);
                  image={item.image}
                  />             
                   </div>
-              ))} */}
+              ))}
                 </div>
-              )}
+              )} */}
     
               {/* ===================================== ACCESSORIES & APPAREL */}
               {accessoriesToggle ? (
