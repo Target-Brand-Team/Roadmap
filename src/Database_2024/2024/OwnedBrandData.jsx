@@ -100,7 +100,7 @@ export const OWNED_BRAND_DATA = {
       label: "dealworthy",
       image: dealworthy,
       pyramid: {
-        primary: "Everyday Care",
+        primary: "Everyday day",
         secondary: "A&A Home Hardlines",
       },
       goal: "Provide a consistent OPP offering to meet guest need, engage with lesser engaged guests and improve Target's price perception",

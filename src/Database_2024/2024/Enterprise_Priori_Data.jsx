@@ -39,6 +39,7 @@ export const ENTERPRISE_PRIORITIES = {
       description01: "",
       description02: "• Product Categories: Pets and Apparel",
     },
+    
   ],
 
   // ===================== TGT FORWARD
