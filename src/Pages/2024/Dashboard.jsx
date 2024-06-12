@@ -14,7 +14,7 @@ const Dashboard = () => {
 
   return (
     <div className="flex flex-col gap-2 mt-1 mx-1 h-[3500px] max-[1280px]:w-[1050px]">
-      <div className="bg-red-600 text-white rounded-sm py-1 px-3 font-bold text-lg flex justify-center">
+      <div className="bg-red-500 text-white rounded-sm py-1 px-3 font-bold text-lg flex justify-center">
         2024
       </div>
       <DashboardGrid
