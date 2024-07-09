@@ -43,7 +43,7 @@ export const CULTURAL_CONTEXT_LINKS =
 			},
 			{
 				key: 'april02',
-				label: 'Coachella',
+				label: 'Coachella vibes',
 			},
 		],
 
@@ -103,7 +103,7 @@ export const CULTURAL_CONTEXT_LINKS =
 			},
 			{
 				key: 'aug03',
-				label: 'Labor Day',
+				label: 'Labor Day weekend',
 			},
 		],
 
